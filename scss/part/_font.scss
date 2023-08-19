@@ -1,0 +1,12 @@
+@use "../top/vars" as *;
+
+// Fonts
+
+@import url("https://winterclover.github.io/Pesterchum-Discord-Theme/fonts/stylesheet.css");
+
+:root {
+    --font-primary: #{$font};
+    --font-display: #{$font};
+    --font-headline: #{$font};
+    --font-code: #{$font};
+}
