@@ -1,0 +1,8 @@
+.parcel-cache
+node_modules
+
+dist
+bundle
+src
+
+preview
