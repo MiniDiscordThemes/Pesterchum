@@ -1,52 +1,81 @@
+[wiki]: https://mspaintadventures.fandom.com/wiki/Chat_client#Pesterchum
+[homestuck]: https://www.homestuck.com/story/25
 
+[css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+[discord]:          https://discord.gg/uy8nKQVatp
 
+[BetterDiscord]:    https://betterdiscord.app/
+[Replugged]:        https://replugged.dev/
+[Vencord]:          https://github.com/Vendicated/Vencord
 
+[shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
+[ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
 
+[shield-bd-dl]:     https://img.shields.io/github/downloads/MiniDiscordThemes/Pesterchum/Pesterchum.theme.css?color=purple&label=Downloads&style=flat-square
+[shield-asar-dl]:   https://img.shields.io/github/downloads/MiniDiscordThemes/Pesterchum/net.saltssaumure.Pesterchum.asar?color=purple&label=Downloads&style=flat-square
+[shield-repo-size]: https://img.shields.io/github/repo-size/MiniDiscordThemes/Pesterchum?label=Repository&style=flat-square "Total size"
 
+[github]:           https://github.com/MiniDiscordThemes/Pesterchum
+[issues]:           https://github.com/MiniDiscordThemes/Pesterchum/issues
+[license]:          https://github.com/MiniDiscordThemes/Pesterchum/blob/main/LICENSE
+[.theme.css]:       https://github.com/MiniDiscordThemes/Pesterchum/blob/main/Pesterchum.theme.css
 
-# Pestercord (4/13/2022 Edition) ✨
+[release-bd]:       https://betterdiscord.app/theme/?id=000 "BetterDiscord store page"
+[release-rp]:       https://replugged.dev/store/net.saltssaumure.Template "Replugged store page"
+[release-bd-gh]:    https://github.com/MiniDiscordThemes/Pesterchum/releases/latest/download/Pesterchum.theme.css "Get latest release"
+[release-rp-gh]:    https://github.com/MiniDiscordThemes/Pesterchum/releases/latest/download/net.saltssaumure.Pesterchum.asar "Get latest release"
 
-This is a **[BetterDiscord](https://betterdiscord.app/)** theme that emulates the look and feel of the chat client, **[Pesterchum](https://mspaintadventures.fandom.com/wiki/Chat_client#Pesterchum)**, shown within the webcomic **[Homestuck](https://www.homestuck.com/story/25)**. Supports both Dark and Light theme (Light Mode is preferred).
+# Pestercord Discord Theme
+[![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
+[![BetterDiscord GitHub downloads][shield-bd-dl]][release-bd-gh]
+[![Replugged GitHub downloads][shield-asar-dl]][release-rp-gh]
+[![Total repository size][shield-repo-size]][github]
 
-## How does it work? 🔧
-Through a rather convoluted and arcane process, you must first install BetterDiscord.
-1.  Download the installer [here](https://github.com/BetterDiscord/Installer/releases/latest)  and open it.
-2.  Agree to the license.
-3.  Select "Install BetterDiscord" from the list of options.
-4.  Choose your current Discord build.
-5.  Click the "Install" button, and Discord should restart with BetterDiscord installed.
+***Emulates the look and feel of the [chat clients][wiki] shown within the webcomic [Homestuck][homestuck].***
 
-Then, an additional hoop must be jumped through. But only one.
+![Screenshot of Pesterchum applied to Discord][screenshot]
 
- 1. Near the top of this page, click "Code".
- 2.  Click the "Download Zip" button to do exactly that. Download it anywhere you will remember to fetch it later.
- 3. Ensure you have BetterDiscord installed. If you don't, refer to the first step of the first sequence.
- 4. Open your Discord user settings. Near the very bottom, there should be a "Themes" tab. Usually above "Change Log" and "HypeSquad." Click it.
- 5. At the top of the themes page, click the "Open themes folder" button.
- 6. Drag the .zip you download into the themes folder that opened. 
- 7. Extract the contents to that folder and delete the original .zip file. ⚠ Make sure that everything inside the "Pesterchum-Discord-Theme-master" folder (the font folder, the .css file, etc.) **except for the folder itself** is in the themes folder. 
- 8. Pester your friends. 8e the 8itch.
+## Installation
 
-## What's new? 🔍
-Frankly, very little from the original master. A few small fixes have been implemented, including:
+### [BetterDiscord][BetterDiscord]
+1. Download `Pesterchum.theme.css`:
+    - [BetterDiscord store][release-bd]
+    - [GitHub][release-bd-gh]
+2. Place the file in the themes folder:
+    - `Settings` > `BetterDiscord` > `Themes` > `Open Themes Folder`
+3. Toggle on the theme card.
 
- - **General compatibility with BetterDiscord version 1.5.X.** It is unknown if upcoming updates may break the theme again, but it is unlikely this will happen for a while (or long enough for you to not have to worry about coming back here for a fix).
-	 - The home/private and group chat icon has been restored to the Pesterchum logo. 
-	 - The chat background for Dark Mode has been restored to a sleek, sexy, oil-like black. 
-	 - The window accent at the top left has been restored from "Discord" to "Pesterchum."
-	 - The text box has been made to match the chat background color.
-	 - Other under-the-hood fixes. We can't tell you what they are because this is supposed to be a cheeky changelog that doesn't really give you much more information to work with. And we're sticking to the bit.
- - **A few small improvements.** So small you might not notice them, but noticeable enough to make the experience just that little bit better.
-	 - Improved color clarity across multiple in-app labels and chat accents, including the call/screenshare UI elements.
-	 - Widened the navigation side of the window (where direct messages and channels sit).
-	 - The typing indicator now appears in black for both Light Mode and Dark Mode. Because white on yellow is fairly hard to read.
- - **Some extra goodies.** These weren't part of the original master, but we think you'll like them.
-	 - The small pop-up profile that appears when you click on someone's name or user icon is now decked out in that tasty Pesterchum mustard yellow. The same goes for the expanded profile.
-	 - Most instances of the word "User" or "Friend" have been changed to "Chum."
-	 - "Direct Messages" has been changed to "Chumroll."
-	 - All buttons on the Friends page and the tabs on the expanded user profile now emulate the buttons from the original Pesterchum 6.0 client.
-	 - On the expanded user profile, "Send Message" now reads "Pester."
-	 - Header text, status icons and miscellaneous buttons near the top right are now black for easier readability against a brighter yellow. Works for both Light and Dark Mode.
+### [Replugged][Replugged]
+#### Automatic
+1. Click to install:
+    - [Replugged store][release-rp]
+#### Manual
+1. Download `net.saltssaumure.Pesterchum.asar`:
+    - [GitHub][release-rp-gh]
+2. Place the file in the themes folder:
+    - `Settings` > `Replugged` > `Themes` > `Open Themes Folder`
+3. Click `Load Missing Themes` and toggle on the theme card.
+
+### [Vencord][Vencord]
+#### Local
+1. Download `Pesterchum.theme.css`:
+    - [BetterDiscord store][release-bd]
+    - [GitHub][release-bd-gh]
+2. Place the file in the themes folder:
+    - `Settings` > `BetterDiscord` > `Themes` > `Local Themes` > `Open Themes Folder`
+3. Click `Load missing Themes` and toggle on the theme card.
+#### Online
+1. Paste the link in `Settings` > `Vencord` > `Themes` > `Online Themes`:
+    - `https://minidiscordthemes.github.io/Pesterchum/Pesterchum.theme.css`
+
+## License
+[MIT License][license]
+- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, just include the original license.
+
+## Questions or suggestions?
+- Post [an issue][issues] on GitHub.
+- Post in `#theme-support` on [my support server][discord].
+
 
 ## Images
 
