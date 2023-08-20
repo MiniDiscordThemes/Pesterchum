@@ -1,9 +1,9 @@
 // Colours
 
 // Main colours
-$inner: #fdb302;
-$outer: #c48a00;
-$outer-light: #fff700;
+$dark: #c48a00;
+$medium: #fdb302;
+$light: #fff700;
 
 // Header colours
 $header-normal: #d5b975;
@@ -11,8 +11,8 @@ $header-hover: #eddbb1;
 $header-active: #fff;
 
 $black: #000000;
-$white: #ffffff;
 $grey: #4f5660;
+$white: #ffffff;
 
 $background: var(--chum-background);
 $foreground: var(--chum-foreground);

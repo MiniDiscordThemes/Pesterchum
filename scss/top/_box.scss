@@ -1,18 +1,18 @@
 @use "./vars" as *;
 
-@mixin default($BG-COLOR: $inner, $BORDER-COLOR: $outer) {
+@mixin default($BG-COLOR: $medium, $BORDER-COLOR: $dark) {
     background: $BG-COLOR;
     border: 0.5vh solid $BORDER-COLOR;
 }
 
-@mixin highlight($BG-COLOR: $inner) {
-    @include default($BG-COLOR: $BG-COLOR, $BORDER-COLOR: $outer-light);
+@mixin highlight($BG-COLOR: $medium) {
+    @include default($BG-COLOR: $BG-COLOR, $BORDER-COLOR: $light);
 }
 
 @mixin black {
     @include default($BG-COLOR: $black);
 }
 
-@mixin sync($BORDER-COLOR: $outer) {
+@mixin sync($BORDER-COLOR: $dark) {
     @include default($background, $BORDER-COLOR);
 }

@@ -9,16 +9,16 @@
 @use "../top/vars" as *;
 
 .bg-1QIAus {
-    background: $inner;
+    background: $medium;
 }
 
 .content-1SgpWY {
-    border: 0.5vh solid $outer-light;
+    border: 0.5vh solid $light;
 
     .chat-2ZfjoI,
     .container-2cd8Mz {
         background: unset;
-        border-left: 0.5vh solid $outer-light;
+        border-left: 0.5vh solid $light;
 
         .content-1jQy2l,
         .tabBody-2dgbAs {

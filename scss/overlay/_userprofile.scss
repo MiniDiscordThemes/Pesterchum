@@ -8,7 +8,7 @@
 
     // Background
     .userProfileInner-1ngKnf {
-        background: $inner;
+        background: $medium;
     }
     .overlayBackground-2aa7wt {
         background: unset;
@@ -21,7 +21,7 @@
 
     // Icon
     .avatar-31d8He {
-        background: $outer;
+        background: $dark;
     }
 
     // Badges
@@ -84,7 +84,7 @@
 
                 &.selected-1sf9UK,
                 &:hover {
-                    border-bottom-color: $outer;
+                    border-bottom-color: $dark;
                 }
 
                 // User info tab
