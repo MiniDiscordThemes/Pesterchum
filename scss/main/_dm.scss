@@ -1,0 +1,48 @@
+@use "../top/replace";
+@use "../top/box";
+
+// DMs
+
+// DM list
+.privateChannels-oVe7HL {
+    // Friends button
+    .channel-1Shao0:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .name-2m3Cms {
+        @include replace.text("Chums", 16px);
+        height: 20px;
+    }
+
+    // DM header
+    .headerText-1qIDDT {
+        @include replace.text("Chumroll", 12px);
+    }
+}
+
+// Friends title
+.container-ZMc96U.themed-Hp1KC_:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .title-17SveM {
+    @include replace.text("Chums", 16px);
+}
+
+// Add friend button
+.addFriend-emTWY1 span {
+    @include replace.text("Add Chum", 16px);
+    height: 20px;
+}
+
+// People
+.peopleColumn-1wMU14 {
+    @include box.sync;
+}
+
+// Active now
+.nowPlayingColumn-1eCBCN {
+    @include box.sync;
+
+    .container-1oAagU {
+        background: unset;
+
+        .scroller-hE2gWq {
+            border-left: 0;
+            margin-left: 0;
+        }
+    }
+}
