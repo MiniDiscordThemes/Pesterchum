@@ -1,6 +1,8 @@
-@forward "./main";
+// @forward "./main";
 @forward "./overlay";
 @forward "./part";
+
+@import url("https://minidiscordthemes.github.io/Squared/sq.min.css");
 
 .theme-dark,
 .theme-light {

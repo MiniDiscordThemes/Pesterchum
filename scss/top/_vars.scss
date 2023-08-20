@@ -1,4 +1,30 @@
 // Colours
 
+// Main colours
+$inner: #fdb302;// background p-primary
+$outer: #c48a00; // border p-secondary
+$outer-light: #fff700; // border 2 p-teriary
+
+// Header colours
+$l-normal: #d5b975;
+$l-hover: #eddbb1;
+$l-active: #fff;
+
+$black: #000000;
+$white: #ffffff;
+$grey: #4f5660;
+
+$background: var(--chum-background);
+$foreground: var(--chum-foreground);
+
+.theme-dark {
+    --chum-background: #{$black};
+    --chum-foreground: #{$white};
+}
+.theme-light {
+    --chum-background: #{$white};
+    --chum-foreground: #{$black};
+}
+
 // Fonts
 $font: "courier_prime", "Courier New", Courier, monospace;
