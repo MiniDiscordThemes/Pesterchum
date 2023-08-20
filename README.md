@@ -67,11 +67,40 @@
     - [BetterDiscord store][release-bd]
     - [GitHub][release-bd-gh]
 2. Place the file in the themes folder:
-    - `Settings` > `BetterDiscord` > `Themes` > `Local Themes` > `Open Themes Folder`
+    - `Settings` > `Vencord` > `Themes` > `Local Themes` > `Open Themes Folder`
 3. Click `Load missing Themes` and toggle on the theme card.
 #### Online
 1. Paste the link in `Settings` > `Vencord` > `Themes` > `Online Themes`:
     - `https://minidiscordthemes.github.io/Pesterchum/Pesterchum.theme.css`
+
+## Customisation
+
+| Description          | Variable name   | Valid values             | Default value |
+| -------------------- | --------------- | ------------------------ | ------------- |
+| Common border colour | `--chum-dark`   | Any [colour][css-color]. | #C48A00       |
+| Main colour          | `--chum-medium` | Any [colour][css-color]. | #FDB302       |
+| Bright border colour | `--chum-light`  | Any [colour][css-color]. | #FFF700       |
+
+### BetterDiscord
+1. Open `Settings` > `BetterDiscord` > `Themes`.
+2. Click the pencil icon on this theme.
+3. Edit the variable values and save changes.
+
+### Replugged
+1. Enable `Automatically Apply Quick CSS` in `Settings` > `Replugged` > `General`.
+1. Open `Settings` > `Replugged` > `Quick CSS`.
+3. Copy and paste lines 15-20 of [`Pesterchum.theme.css`][.theme.css].
+3. Edit the variable values and save.
+
+### Vencord
+#### Local
+2. `Open Themes Folder` in `Settings` > `Vencord` > `Themes` > `Local Themes`
+3. Open `Template.theme.css` with your favourite text editor.
+4. Edit the variable values and save.
+#### Online
+1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
+2. Copy and paste lines 15-20 of [`Pesterchum.theme.css`][.theme.css].
+3. Edit the variable values.
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.

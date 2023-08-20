@@ -1,21 +1,18 @@
-// Colours
-
 // Main colours
-$dark: #c48a00;
-$medium: #fdb302;
-$light: #fff700;
 
-// Header colours
-$header-normal: #d5b975;
-$header-hover: #eddbb1;
-$header-active: #fff;
+:root {
+    --chum-dark: #c48a00;
+    --chum-medium: #fdb302;
+    --chum-light: #fff700;
+}
+
+$dark: var(--chum-dark);
+$medium: var(--chum-medium);
+$light: var(--chum-light);
 
 $black: #000000;
 $grey: #4f5660;
 $white: #ffffff;
-
-$background: var(--chum-background);
-$foreground: var(--chum-foreground);
 
 .theme-dark {
     --chum-background: #{$black};
@@ -26,7 +23,11 @@ $foreground: var(--chum-foreground);
     --chum-foreground: #{$black};
 }
 
-// Channel
+$background: var(--chum-background);
+$foreground: var(--chum-foreground);
+
+// Channel colours
+
 $channel: #8e9297;
 $normal-content: #b9bbbe;
 $hover-content: #dcddde;
@@ -38,4 +39,5 @@ $selected-bg: rgba(79, 84, 92, 0.32);
 $accent-bg: hsla(0, 0%, 100%, 0.06);
 
 // Sizes
+
 $size-max: 999px;
