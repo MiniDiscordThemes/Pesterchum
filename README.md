@@ -24,7 +24,7 @@
 [.theme.css]:       https://github.com/MiniDiscordThemes/Pesterchum/blob/main/Pesterchum.theme.css
 
 [release-bd]:       https://betterdiscord.app/theme/?id=000 "BetterDiscord store page"
-[release-rp]:       https://replugged.dev/store/net.saltssaumure.Template "Replugged store page"
+[release-rp]:       https://replugged.dev/store/net.saltssaumure.Pesterchum "Replugged store page"
 [release-bd-gh]:    https://github.com/MiniDiscordThemes/Pesterchum/releases/latest/download/Pesterchum.theme.css "Get latest release"
 [release-rp-gh]:    https://github.com/MiniDiscordThemes/Pesterchum/releases/latest/download/net.saltssaumure.Pesterchum.asar "Get latest release"
 
@@ -44,7 +44,6 @@
 
 ### [BetterDiscord][BetterDiscord]
 1. Download `Pesterchum.theme.css`:
-    - [BetterDiscord store][release-bd]
     - [GitHub][release-bd-gh]
 2. Place the file in the themes folder:
     - `Settings` > `BetterDiscord` > `Themes` > `Open Themes Folder`
@@ -64,7 +63,6 @@
 ### [Vencord][Vencord]
 #### Local
 1. Download `Pesterchum.theme.css`:
-    - [BetterDiscord store][release-bd]
     - [GitHub][release-bd-gh]
 2. Place the file in the themes folder:
     - `Settings` > `Vencord` > `Themes` > `Local Themes` > `Open Themes Folder`
@@ -95,7 +93,7 @@
 ### Vencord
 #### Local
 2. `Open Themes Folder` in `Settings` > `Vencord` > `Themes` > `Local Themes`
-3. Open `Template.theme.css` with your favourite text editor.
+3. Open `Pesterchum.theme.css` with your favourite text editor.
 4. Edit the variable values and save.
 #### Online
 1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
