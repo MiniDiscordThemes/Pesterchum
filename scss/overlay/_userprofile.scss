@@ -1,8 +1,10 @@
 @use "../top/vars" as *;
+@use "../top/box";
+@use "../top/replace";
 
 // User profile
 .userProfileOuter-2tQwNf {
-    border: 0.4vh solid $outer;
+    @include box.default;
 
     // Background
     .userProfileInner-1ngKnf {
@@ -25,8 +27,7 @@
     // Badges
     .profileBadges-2pItdR,
     .badgeList-2aoHPw {
-        background: $background;
-        border: 0.4vh solid $outer;
+        @include box.sync;
         padding: 0;
 
         &:empty {
@@ -37,19 +38,12 @@
     // Send friend request
     .relationshipButtons-3ByBpj {
         .actionButton-iarQTd {
-            background: $outer-light;
-            border: 0.4vh solid $outer;
+            @include box.default($outer-light);
             height: 35px;
             color: $black;
 
             .contents-3NembX {
-                font-size: 0;
-
-                &::before {
-                    font-size: 14px;
-                    line-height: 24px;
-                    content: "Pester";
-                }
+                @include replace.text("Pester");
             }
         }
 
@@ -83,8 +77,7 @@
             gap: 10px;
 
             .item-2GWPIy {
-                background: $outer-light;
-                border: 0.4vh solid $outer;
+                @include box.default($outer-light);
                 color: $black;
                 padding: 8px;
                 box-sizing: border-box;
@@ -96,22 +89,12 @@
 
                 // User info tab
                 &:first-child {
-                    font-size: 0;
-
-                    &::before {
-                        font-size: 14px;
-                        content: "Chum Info";
-                    }
+                    @include replace.text("Chum Info");
                 }
 
                 // Mutual friends tab
                 &:last-child {
-                    font-size: 0;
-
-                    &::before {
-                        font-size: 14px;
-                        content: "Mutual Chums";
-                    }
+                    @include replace.text("Mutual Chums");
                 }
             }
         }
@@ -151,8 +134,7 @@
 
     // Roles
     .role-2TIOKu {
-        background: $background;
-        border: 0.4vh solid $outer;
+        @include box.sync;
         box-sizing: content-box;
         padding: 0;
         .roleNameOverflow-Xok3NR {
@@ -163,8 +145,7 @@
     // Note
     .note-1NN2aP,
     .note-3M15gE {
-        background: $background;
-        border: 0.4vh solid $outer;
+        @include box.sync;
         .textarea-_59yqs {
             color: $foreground;
         }
@@ -172,8 +153,7 @@
 
     // Message
     .messageInputContainer-24qqTx {
-        background: $background;
-        border: 0.4vh solid $outer;
+        @include box.sync;
         .messageInput-1enlaJ {
             color: $foreground;
         }
@@ -181,8 +161,7 @@
 
     // Connected accounts
     .connectedAccountContainer-3aLMHJ {
-        background: $background;
-        border: 0.4vh solid $outer;
+        @include box.sync;
     }
 
     // Server or friend

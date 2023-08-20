@@ -1,0 +1,9 @@
+// Replaces text in place
+@mixin text($CONTENT, $FONT-SIZE: 14px) {
+    font-size: 0;
+
+    &::before {
+        font-size: $FONT-SIZE;
+        content: $CONTENT;
+    }
+}
