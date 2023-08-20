@@ -1,0 +1,27 @@
+@use "../top/vars" as *;
+
+// Servers list
+.wrapper-1_HaEi {
+    background: unset;
+
+    // Home icon
+    .homeIcon-r0w4ny {
+        background: url("https://minidiscordthemes.github.io/Pesterchum/img/home.avif") center/contain no-repeat;
+        width: 35px;
+        height: 35px;
+        color: transparent;
+    }
+
+    // Icon backgrounds
+    .childWrapper-1j_1ub,
+    .wrapper-3kah-n:hover .childWrapper-1j_1ub,
+    .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
+        background: $background;
+    }
+
+    // Folders
+    .expandedFolderBackground-1kSAf6,
+    .folder-241Joy {
+        background: $background;
+    }
+}

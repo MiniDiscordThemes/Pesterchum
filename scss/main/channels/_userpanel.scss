@@ -1,0 +1,65 @@
+@use "../../top/vars" as *;
+@use "../../top/box";
+
+.panels-3wFtMD {
+    .panel-2ZFCRb,
+    .container-1zzFcN,
+    .container-YkUktl {
+        background: unset;
+    }
+
+    // Button icons
+    .button-12Fmur {
+        color: $white;
+    }
+
+    // Now playing
+    .panel-2ZFCRb {
+        border-bottom: 0;
+
+        // Name
+        .title-338goq {
+            color: $white;
+        }
+    }
+
+    // Voice controls
+    .container-1zzFcN {
+        border-bottom: 0;
+
+        // Channel name
+        .channel-3prF2u {
+            color: $grey;
+        }
+
+        // Activity buttons
+        .actionButtons-2vEOUh {
+            .button-1EGGcP:not(.disabledButtonWrapper-1m0hYZ) {
+                @include box.default;
+                height: 36px;
+                color: $black;
+                padding: 0;
+            }
+
+            // Disabled button
+            .disabledButtonWrapper-1m0hYZ {
+                height: 36px;
+
+                .contents-3NembX {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    // User controls
+    .container-YkUktl {
+        margin-bottom: 0;
+
+        .avatarWrapper-1B9FTW {
+            margin: 0;
+            padding-left: 0;
+        }
+    }
+}

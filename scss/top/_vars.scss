@@ -1,0 +1,43 @@
+// Main colours
+
+:root {
+    --chum-dark: #c48a00;
+    --chum-medium: #fdb302;
+    --chum-light: #fff700;
+}
+
+$dark: var(--chum-dark);
+$medium: var(--chum-medium);
+$light: var(--chum-light);
+
+$black: #000000;
+$grey: #4f5660;
+$white: #ffffff;
+
+.theme-dark {
+    --chum-background: #{$black};
+    --chum-foreground: #{$white};
+}
+.theme-light {
+    --chum-background: #{$white};
+    --chum-foreground: #{$black};
+}
+
+$background: var(--chum-background);
+$foreground: var(--chum-foreground);
+
+// Channel colours
+
+$channel: #8e9297;
+$normal-content: #b9bbbe;
+$hover-content: #dcddde;
+$active-content: #fff;
+$muted-content: #4f545c;
+$hover-bg: rgba(79, 84, 92, 0.16);
+$active-bg: rgba(79, 84, 92, 0.24);
+$selected-bg: rgba(79, 84, 92, 0.32);
+$accent-bg: hsla(0, 0%, 100%, 0.06);
+
+// Sizes
+
+$size-max: 999px;

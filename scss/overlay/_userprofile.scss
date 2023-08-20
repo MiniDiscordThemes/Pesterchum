@@ -1,0 +1,183 @@
+@use "../top/vars" as *;
+@use "../top/box";
+@use "../top/replace";
+
+// User profile
+.userProfileOuter-2tQwNf {
+    @include box.default;
+
+    // Background
+    .userProfileInner-1ngKnf {
+        background: $medium;
+    }
+    .overlayBackground-2aa7wt {
+        background: unset;
+    }
+
+    // Text
+    .defaultColor-1EVLSt {
+        color: $black;
+    }
+
+    // Icon
+    .avatar-31d8He {
+        background: $dark;
+    }
+
+    // Badges
+    .profileBadges-2pItdR,
+    .badgeList-2aoHPw {
+        @include box.sync;
+        padding: 0;
+
+        &:empty {
+            visibility: hidden;
+        }
+    }
+
+    // Send friend request
+    .relationshipButtons-3ByBpj {
+        .actionButton-iarQTd {
+            @include box.highlight;
+            height: 35px;
+            color: $black;
+
+            .contents-3NembX {
+                @include replace.text("Pester");
+            }
+        }
+
+        // More options
+        .additionalActionsIcon-3Cy8UU,
+        .additionalActionsIcon-3Cy8UU:hover {
+            color: $black;
+        }
+    }
+
+    // Name
+    .userTagUsernameBase-267ALn,
+    .discriminator-hnHkyt {
+        color: $black;
+    }
+    .discrimBase-v65kTs {
+        color: $grey;
+    }
+
+    // Status
+    .customStatus-19KW6v,
+    .customStatus-3qYNe4 {
+        color: $grey;
+    }
+
+    // Tabs
+    .tabBarContainer-sCZC4w {
+        border-bottom: 0;
+
+        .tabBar-2hXqzU {
+            gap: 10px;
+
+            .item-2GWPIy {
+                @include box.highlight;
+                color: $black;
+                padding: 8px;
+                box-sizing: border-box;
+
+                &.selected-1sf9UK,
+                &:hover {
+                    border-bottom-color: $dark;
+                }
+
+                // User info tab
+                &:first-child {
+                    @include replace.text("Chum Info");
+                }
+
+                // Mutual friends tab
+                &:last-child {
+                    @include replace.text("Mutual Chums");
+                }
+            }
+        }
+    }
+
+    // Divider
+    .divider-2dDziJ {
+        display: none;
+    }
+
+    // Section title
+    .title-3CjiSS {
+        color: $grey;
+    }
+
+    // Member since
+    .memberSinceContainer-2CBD23 {
+        .discordIcon-32mgeP {
+            color: $black;
+        }
+    }
+
+    // Activity
+    .activity-3uaYny {
+        .headerText-3g1XK9 {
+            color: $grey;
+        }
+        .activityName-3YXl6e,
+        .content-tXPNDw,
+        .details-2-ciHo,
+        .name-1-Q7l2,
+        .nameNormal-2fPMD2,
+        .nameWrap-3TyM52 {
+            color: $black;
+        }
+    }
+
+    // Roles
+    .role-2TIOKu {
+        @include box.sync;
+        box-sizing: content-box;
+        padding: 0;
+        .roleNameOverflow-Xok3NR {
+            color: $foreground;
+        }
+    }
+
+    // Note
+    .note-1NN2aP,
+    .note-3M15gE {
+        @include box.sync;
+        .textarea-_59yqs {
+            color: $foreground;
+        }
+    }
+
+    // Message
+    .messageInputContainer-24qqTx {
+        @include box.sync;
+        .messageInput-1enlaJ {
+            color: $foreground;
+        }
+    }
+
+    // Connected accounts
+    .connectedAccountContainer-3aLMHJ {
+        @include box.sync;
+    }
+
+    // Server or friend
+    .listRow-2nO1T6 {
+        .listName-PwbeHL,
+        .guildNick-fe8oPN {
+            color: $grey;
+        }
+    }
+}
+
+// Themed
+.userProfileOuterThemed-2BgJCM.userPopoutOuter-1OHwPL,
+.userProfileOuterThemed-2BgJCM.userProfileOuter-2tQwNf {
+    padding: 0;
+}
+.userProfileInner-1ngKnf::before {
+    display: none;
+}

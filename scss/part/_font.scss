@@ -1,0 +1,11 @@
+@import url("https://minidiscordthemes.github.io/Pesterchum/font/courier_prime/stylesheet.css");
+@import url("https://minidiscordthemes.github.io/Pesterchum/font/courier_new_cyr/stylesheet.css");
+
+// Fonts
+:root {
+    $font: "courier_prime", "courier_new_cyr", "Courier New", Courier, monospace;
+    --font-primary: #{$font};
+    --font-display: #{$font};
+    --font-headline: #{$font};
+    --font-code: #{$font};
+}

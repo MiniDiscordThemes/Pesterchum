@@ -1,0 +1,23 @@
+@use "../top/vars" as *;
+
+// Titlebar
+
+// Logo
+.wordmark-2u86JB {
+    visibility: hidden;
+    padding: 0;
+
+    &::before {
+        visibility: visible;
+        padding: 4px 9px 3px;
+        content: "PESTERCHUM";
+        font-weight: 700;
+        font-size: 16px;
+        color: $white;
+    }
+}
+
+// Windows buttons
+.winButton-3UMjdg {
+    color: $white;
+}

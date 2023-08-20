@@ -1,0 +1,78 @@
+@forward "./userpanel";
+
+@use "../../top/vars" as *;
+@use "../../top/box";
+
+// Channels
+.sidebar-1tnWFu {
+    background: unset;
+    padding: 10px;
+    gap: 10px;
+    width: 300px;
+
+    --header-primary: #{$white};
+    --header-secondary: #{$white};
+
+    --channels-default: #{$channel};
+    --channel-icon: #{$channel};
+
+    --interactive-normal: #{$normal-content};
+    --interactive-hover: #{$hover-content};
+    --interactive-active: #{$active-content};
+    --interactive-muted: #{$muted-content};
+    --text-normal: #{$normal-content};
+    --text-hover: #{$hover-content};
+    --text-active: #{$active-content};
+    --text-muted: #{$muted-content};
+
+    --background-modifier-hover: #{$hover-bg};
+    --background-modifier-active: #{$active-bg};
+    --background-modifier-selected: #{$selected-bg};
+    --background-modifier-accent: #{$accent-bg};
+
+    // Title
+    &::before {
+        content: "PESTERCHUM 6.0";
+        font-size: 27px;
+        font-weight: 700;
+        text-align: center;
+        color: $white;
+    }
+
+    // Actual channels and userarea
+    .container-1NXEtd,
+    .privateChannels-oVe7HL,
+    .panels-3wFtMD {
+        @include box.highlight($black);
+    }
+
+    // Voice users collapsed
+    .overlap-1yhayD .avatar-3FKimL,
+    .moreContainer-R0kRGB {
+        @include box.black;
+        border-radius: $size-max;
+    }
+
+    // Unread bars
+    .bar-wDIGjg {
+        @include box.black;
+        border-radius: $size-max;
+    }
+
+    // Voice user limit
+    .wrapper-2fEmwW {
+        .users-2JoyGL,
+        .total-1c5KCN {
+            background: unset;
+        }
+        .total-1c5KCN:after {
+            content: "/";
+            border: 0;
+        }
+    }
+
+    // Show all voice channels
+    .voiceChannelsButton-SRmgo8:hover {
+        background: unset;
+    }
+}

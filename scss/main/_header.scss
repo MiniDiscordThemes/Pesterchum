@@ -1,0 +1,32 @@
+@use "../top/vars" as *;
+
+// Header bar
+.container-ZMc96U:is(.title-31SJ6t, .themed-Hp1KC_) {
+    background: unset;
+
+    .children-3xh0VB::after {
+        background: linear-gradient(90deg, transparent, var(--message-background-alt));
+    }
+
+    .title-17SveM,
+    .topic-11NuQZ,
+    .nicknames-10Sg6e {
+        color: $black;
+    }
+
+    .divider-q3P9HC {
+        display: none;
+    }
+
+    .searchBar-jGtisZ {
+        background: $background;
+    }
+
+    // Channel icon
+    .icon-2xnN2Y,
+    .clickable-ZD7xvu .icon-2xnN2Y,
+    .clickable-ZD7xvu:hover .icon-2xnN2Y,
+    .selected-29KTGM .icon-2xnN2Y {
+        color: $black;
+    }
+}

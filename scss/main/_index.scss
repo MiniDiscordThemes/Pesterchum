@@ -1,0 +1,33 @@
+@forward "./channels";
+@forward "./dm";
+@forward "./header";
+@forward "./members";
+@forward "./messages";
+@forward "./servers";
+@forward "./titlebar";
+
+@use "../top/vars" as *;
+
+.bg-1QIAus {
+    background: $medium;
+}
+
+.content-1SgpWY {
+    border: 0.5vh solid $light;
+
+    .chat-2ZfjoI,
+    .container-2cd8Mz {
+        background: unset;
+        border-left: 0.5vh solid $light;
+
+        .content-1jQy2l,
+        .tabBody-2dgbAs {
+            padding: 16px;
+            gap: 16px;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
