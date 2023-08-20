@@ -1,5 +1,8 @@
-[wiki]: https://mspaintadventures.fandom.com/wiki/Chat_client#Pesterchum
-[homestuck]: https://www.homestuck.com/story/25
+[wiki]:             https://mspaintadventures.fandom.com/wiki/Chat_client#Pesterchum
+[homestuck]:        https://www.homestuck.com/story/25
+
+[dark]:             https://cdn.discordapp.com/attachments/1142305515439923260/1142576246165876927/pesterchumdark.png
+[light]:            https://cdn.discordapp.com/attachments/1142305515439923260/1142576246480437348/pesterchumlight.png
 
 [css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
 [discord]:          https://discord.gg/uy8nKQVatp
@@ -33,7 +36,9 @@
 
 ***Emulates the look and feel of the [chat clients][wiki] shown within the webcomic [Homestuck][homestuck].***
 
-![Screenshot of Pesterchum applied to Discord][screenshot]
+| Dark mode                                      | Light mode                                       |
+| ---------------------------------------------- | ------------------------------------------------ |
+| ![Screenshot of Pesterchum in dark mode][dark] | ![Screenshot of Pesterchum in light mode][light] |
 
 ## Installation
 
@@ -68,19 +73,6 @@
 1. Paste the link in `Settings` > `Vencord` > `Themes` > `Online Themes`:
     - `https://minidiscordthemes.github.io/Pesterchum/Pesterchum.theme.css`
 
-## License
-[MIT License][license]
-- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, just include the original license.
-
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.
 - Post in `#theme-support` on [my support server][discord].
-
-
-## Images
-
-![Light Mode](https://i.imgur.com/TxwmnWw.png)![Dark Mode](https://i.imgur.com/RMHmsZF.png)
-![enter image description here](https://i.imgur.com/N6B4E5o.png)
-![enter image description here](https://i.imgur.com/uEOhbRd.png)
-![enter image description here](https://i.imgur.com/AcAf4N4.png)
-![enter image description here](https://i.imgur.com/Zu6E7ZD.png)
