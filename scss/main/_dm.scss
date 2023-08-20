@@ -1,3 +1,4 @@
+@use "../top/vars" as *;
 @use "../top/replace";
 @use "../top/box";
 
@@ -5,27 +6,77 @@
 
 // DM list
 .privateChannels-oVe7HL {
-    // Friends button
-    .channel-1Shao0:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .name-2m3Cms {
+    .scroller-WSmht3 {
+        background: unset;
+
+        // Primary channels
+        .channel-1Shao0 {
+            max-width: unset;
+
+            // Friends channel
+            &:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .name-2m3Cms {
+                @include replace.text("Chums", 16px);
+                height: 20px;
+            }
+        }
+
+        // DM header
+        .headerText-1qIDDT {
+            @include replace.text("Chumroll", 12px);
+        }
+    }
+}
+
+// Header
+.container-ZMc96U {
+    // Friends title
+    &:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .title-17SveM {
         @include replace.text("Chums", 16px);
+    }
+
+    // Friend tabs
+    .item-2GWPIy {
+        @include box.highlight;
+        color: $black;
+
+        &.themed-qqoYp3:hover:not(.disabled-2G98Nl),
+        &.themed-qqoYp3.selected-1sf9UK.item-2GWPIy,
+        &.addFriend-emTWY1.addFriend-emTWY1 {
+            background-color: $outer-light;
+            color: $black;
+        }
+    }
+
+    // Add friend button
+    .addFriend-emTWY1 span {
+        @include replace.text("Add Chum", 16px);
         height: 20px;
     }
 
-    // DM header
-    .headerText-1qIDDT {
-        @include replace.text("Chumroll", 12px);
+    .akaBadge-3i7V3p {
+        background: $black;
+        color: $white;
     }
 }
 
-// Friends title
-.container-ZMc96U.themed-Hp1KC_:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .title-17SveM {
-    @include replace.text("Chums", 16px);
-}
+// DM call container
+.wrapper-1gVUIN.minimum-fXpVNc {
+    background: unset;
 
-// Add friend button
-.addFriend-emTWY1 span {
-    @include replace.text("Add Chum", 16px);
-    height: 20px;
+    .quickSelectLabel-ArUyd9,
+    .quickSelect-384d3G,
+    .controlIcon-10O-4h.themeable-2nUqEz {
+        color: $black;
+    }
+
+    // Square buttons
+    .controlButton-2PMNom {
+        @include box.default;
+        .colorable-3rVGna.primaryDark-2UJt1G,
+        .colorable-3rVGna.primaryLight-1yA273 {
+            background: unset;
+        }
+    }
 }
 
 // People
@@ -44,5 +95,15 @@
             border-left: 0;
             margin-left: 0;
         }
+    }
+}
+
+// User profile panel
+.profilePanel-2VBkh8 {
+    @include box.sync;
+
+    .userProfileOuterUnthemed-11rPfA,
+    .userPanelInnerThemed-3YO1BB {
+        background: unset;
     }
 }

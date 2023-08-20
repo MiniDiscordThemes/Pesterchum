@@ -1,0 +1,18 @@
+@use "../top/vars" as *;
+
+// Loading messages
+.wrapper-3HVHpV {
+    background: unset;
+
+    // Message
+    .wrapper-15CKyy {
+        background: unset;
+
+        .attachment-16cAbS,
+        .avatar-l9Txm5,
+        .blob-1uHjdp {
+            background: $outer;
+            opacity: 0.2 !important;
+        }
+    }
+}

@@ -35,7 +35,7 @@
         // Activity buttons
         .actionButtons-2vEOUh {
             .button-1EGGcP:not(.disabledButtonWrapper-1m0hYZ) {
-                @include box.default($BG-COLOR: $outer-light);
+                @include box.default;
                 height: 36px;
                 color: $black;
                 padding: 0;
@@ -55,7 +55,6 @@
 
     // User controls
     .container-YkUktl {
-        max-width: 240px;
         margin-bottom: 0;
 
         .avatarWrapper-1B9FTW {

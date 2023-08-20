@@ -4,12 +4,11 @@
 // Members list
 .container-2o3qEW {
     background: unset;
+}
+.members-3WRCEx {
+    @include box.sync;
 
-    .members-3WRCEx {
-        @include box.sync;
-
-        .member-48YF_l {
-            background: unset;
-        }
+    .member-48YF_l {
+        background: unset;
     }
 }

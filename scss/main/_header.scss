@@ -1,7 +1,7 @@
 @use "../top/vars" as *;
 
 // Header bar
-.container-ZMc96U.themed-Hp1KC_ {
+.container-ZMc96U:is(.title-31SJ6t, .themed-Hp1KC_) {
     background: unset;
 
     .children-3xh0VB::after {
@@ -17,14 +17,16 @@
     .divider-q3P9HC {
         display: none;
     }
-}
 
-// Channel icon
-.icon-2xnN2Y {
-    &,
-    .clickable-ZD7xvu &,
-    .clickable-ZD7xvu:hover &,
-    .selected-29KTGM & {
+    .searchBar-jGtisZ {
+        background: $background;
+    }
+
+    // Channel icon
+    .icon-2xnN2Y,
+    .clickable-ZD7xvu .icon-2xnN2Y,
+    .clickable-ZD7xvu:hover .icon-2xnN2Y,
+    .selected-29KTGM .icon-2xnN2Y {
         color: $black;
     }
 }

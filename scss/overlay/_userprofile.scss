@@ -38,7 +38,7 @@
     // Send friend request
     .relationshipButtons-3ByBpj {
         .actionButton-iarQTd {
-            @include box.default($outer-light);
+            @include box.highlight;
             height: 35px;
             color: $black;
 
@@ -77,7 +77,7 @@
             gap: 10px;
 
             .item-2GWPIy {
-                @include box.default($outer-light);
+                @include box.highlight;
                 color: $black;
                 padding: 8px;
                 box-sizing: border-box;

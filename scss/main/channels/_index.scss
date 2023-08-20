@@ -8,26 +8,27 @@
     background: unset;
     padding: 10px;
     gap: 10px;
+    width: 300px;
 
     --header-primary: #{$white};
     --header-secondary: #{$white};
 
-    --channels-default: var(--channels-alt);
-    --channel-icon: var(--channels-alt);
+    --channels-default: #{$channel};
+    --channel-icon: #{$channel};
 
-    --interactive-normal: var(--alt-normal);
-    --interactive-hover: var(--alt-hover);
-    --interactive-active: var(--alt-active);
-    --interactive-muted: var(--alt-muted);
-    --text-normal: var(--alt-normal);
-    --text-hover: var(--alt-hover);
-    --text-active: var(--alt-active);
-    --text-muted: var(--alt-muted);
+    --interactive-normal: #{$normal-content};
+    --interactive-hover: #{$hover-content};
+    --interactive-active: #{$active-content};
+    --interactive-muted: #{$muted-content};
+    --text-normal: #{$normal-content};
+    --text-hover: #{$hover-content};
+    --text-active: #{$active-content};
+    --text-muted: #{$muted-content};
 
-    --background-modifier-hover: var(--alt-modifier-hover);
-    --background-modifier-active: var(--alt-modifier-active);
-    --background-modifier-selected: var(--alt-modifier-selected);
-    --background-modifier-accent: var(--alt-modifier-accent);
+    --background-modifier-hover: #{$hover-bg};
+    --background-modifier-active: #{$active-bg};
+    --background-modifier-selected: #{$selected-bg};
+    --background-modifier-accent: #{$accent-bg};
 
     // Title
     &::before {
@@ -42,19 +43,19 @@
     .container-1NXEtd,
     .privateChannels-oVe7HL,
     .panels-3wFtMD {
-        @include box.default($BG-COLOR: $black, $BORDER-COLOR: $outer-light);
+        @include box.highlight($black);
     }
 
     // Voice users collapsed
     .overlap-1yhayD .avatar-3FKimL,
     .moreContainer-R0kRGB {
-        @include box.default($BG-COLOR: $black);
+        @include box.black;
         border-radius: $size-max;
     }
 
     // Unread bars
     .bar-wDIGjg {
-        @include box.default($BG-COLOR: $black);
+        @include box.black;
         border-radius: $size-max;
     }
 
