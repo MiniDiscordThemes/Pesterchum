@@ -11,21 +11,20 @@
     .title-17SveM,
     .topic-11NuQZ,
     .nicknames-10Sg6e {
-        color: $white;
+        color: $black;
+    }
+
+    .divider-q3P9HC {
+        display: none;
     }
 }
 
 // Channel icon
 .icon-2xnN2Y {
-    color: $white;
-
-    .clickable-ZD7xvu & {
-        color: $header-normal;
-    }
-    .clickable-ZD7xvu:hover & {
-        color: $header-hover;
-    }
+    &,
+    .clickable-ZD7xvu &,
+    .clickable-ZD7xvu:hover &,
     .selected-29KTGM & {
-        color: $header-active;
+        color: $black;
     }
 }
