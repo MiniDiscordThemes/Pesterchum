@@ -1,37 +1,50 @@
-/*Messages*/
-.form-3gdLxP {
-    background-color: var(--p-primary);
-}
-.form-3gdLxP:before {
-    content: none;
-}
-.scrollableContainer-15eg7h {
-    border: 0.5vh solid;
-    border-color: var(--p-secondary);
-    border-radius: 0px;
-}
-.channelTextAreaDisabled-1p2fQv {
-    background-color: var(--p-secondary);
-    border-radius: 0px;
-}
-.chatContent-3KubbW,
-.tabBody-2dgbAs {
-    background-color: var(--p-primary);
-}
-.messagesWrapper-RpOMA3,
-.peopleColumn-1wMU14,
-.nowPlayingColumn-1eCBCN {
-    background-color: var(--background-primary);
-    margin: 16px;
-    border: 0.5vh solid;
-    border-color: var(--p-secondary);
-}
-.chat-2ZfjoI,
-.container-2cd8Mz {
-    border-left: 0.5vh solid;
-    border-color: var(--p-teriary);
-    background-color: var(--p-primary);
-}
-.input-1nrc5P {
-    color: white;
+@use "../top/vars" as *;
+@use "../top/box";
+
+// Chat
+.chatContent-3KubbW {
+    gap: 16px;
+    background: unset;
+    // Chat
+    .messagesWrapper-RpOMA3 {
+        @include box.sync;
+    }
+
+    // Message area
+    .form-3gdLxP {
+        padding: 0;
+
+        &::before {
+            display: none;
+        }
+
+        .channelTextArea-1FufC0 {
+            @include box.sync;
+            box-sizing: border-box;
+
+            &.channelTextAreaDisabled-1p2fQv {
+                background: $outer;
+            }
+
+            .themedBackground-3uF0xW {
+                background: unset;
+            }
+        }
+
+        // Accessories
+        .base-3bcbY3 {
+            color: $black;
+            inset: auto 0 0;
+
+            // Typing
+            .dots-1k2MxY.themed-3dHGSa {
+                color: $black;
+            }
+
+            // Slow mode
+            .cooldownWrapper-2k1jHK {
+                color: $black !important;
+            }
+        }
+    }
 }

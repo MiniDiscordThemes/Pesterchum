@@ -1,7 +1,7 @@
 @forward "./channels";
 @forward "./header";
 @forward "./members";
-// @forward "./messages";
+@forward "./messages";
 @forward "./servers";
 @forward "./titlebar";
 
@@ -16,5 +16,15 @@
 
     .chat-2ZfjoI {
         background: unset;
+        border-left: 0.5vh solid $outer-light;
+
+        .content-1jQy2l {
+            padding: 16px;
+            gap: 16px;
+
+            &::before {
+                display: none;
+            }
+        }
     }
 }
