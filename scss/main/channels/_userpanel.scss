@@ -1,36 +1,66 @@
-.panels-3wFtMD[aria-label="User area"]
-    > .wrapper-3Hk9OB
-    > .container-1zzFcN
-    > .connection-3k9QeF
-    > .inner-llGtyq
-    > div
-    > a
-    > .size12-oc4dx4.subtext-2HDqJ7.channel-3prF2u {
-    color: #4f5660;
-}
+@use "../../top/vars" as *;
+@use "../../top/box";
 
-.panels-3wFtMD[aria-label="User area"] > .wrapper-3Hk9OB > .container-1zzFcN > .actionButtons-2vEOUh > .button-1EGGcP {
-    background-color: var(--p-teriary);
-    border-radius: 0;
-    border: 0.4vh solid;
-    border-color: var(--p-secondary) !important;
-    height: 36px;
-    color: black;
-}
+.panels-3wFtMD {
+    .panel-2ZFCRb,
+    .container-1zzFcN,
+    .container-YkUktl {
+        background: unset;
+    }
 
-.panels-3wFtMD[aria-label="User area"]
-    > .panel-2ZFCRb.activityPanel-9icbyU
-    > .body-1FrnJD
-    > .gameWrapper-2TFy7F.clickableGameWrapper-1xHQQL
-    > .info-88fTUI
-    > .text-sm-normal-3Zj3Iv.title-338goq {
-    color: black;
-}
+    // Button icons
+    .button-12Fmur {
+        color: $white;
+    }
 
-.sidebar-1tnWFu > .panels-3wFtMD > .wrapper-3Hk9OB > .container-1zzFcN > div > .inner-llGtyq > div > a > div {
-    color: #4f5660;
-}
+    // Now playing
+    .panel-2ZFCRb {
+        border-bottom: 0;
 
-.sidebar-1tnWFu > .panels-3wFtMD > .wrapper-3Hk9OB > .container-1zzFcN {
-    background-color: var(--p-primary);
+        // Name
+        .title-338goq {
+            color: $white;
+        }
+    }
+
+    // Voice controls
+    .container-1zzFcN {
+        border-bottom: 0;
+
+        // Channel name
+        .channel-3prF2u {
+            color: $grey;
+        }
+
+        // Activity buttons
+        .actionButtons-2vEOUh {
+            .button-1EGGcP:not(.disabledButtonWrapper-1m0hYZ) {
+                @include box.default($BG-COLOR: $outer-light);
+                height: 36px;
+                color: $black;
+                padding: 0;
+            }
+
+            // Disabled button
+            .disabledButtonWrapper-1m0hYZ {
+                height: 36px;
+
+                .contents-3NembX {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    // User controls
+    .container-YkUktl {
+        max-width: 240px;
+        margin-bottom: 0;
+
+        .avatarWrapper-1B9FTW {
+            margin: 0;
+            padding-left: 0;
+        }
+    }
 }

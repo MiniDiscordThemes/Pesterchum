@@ -1,164 +1,77 @@
 @forward "./userpanel";
-@forward "./voice";
 
-// Overall background
-.container-1NXEtd {
-    background: black;
-    margin: 8px;
-    margin-top: 0px;
-    border: 0.5vh solid;
-    border-color: var(--p-teriary);
-}
+@use "../../top/vars" as *;
+@use "../../top/box";
 
-/*Sidebar*/
-.sidebar-1tnWFu:before {
-    content: "PESTERCHUM 6.0";
-    font-size: 27px;
-    font-weight: 700;
-    text-align: center;
-    padding: 10.8px 0px 10.8px;
-    color: white;
-}
-.button-12Fmur {
-    color: var(--alt-normal);
-}
-.button-12Fmur.enabled-9OeuTA:hover {
-    color: var(--alt-hover);
-    background-color: var(--alt-modifier-selected);
-}
-.container-q97qHp {
-    color: var(--channels-alt);
-}
-.privateChannelsHeaderContainer-1UWASm:hover {
-    color: var(--alt-hover);
-}
-.base-2jDfDU {
-    border: 0.5vh solid;
-    border-color: var(--p-teriary);
-}
+// Channels
 .sidebar-1tnWFu {
-    border-radius: 0px;
-    background: var(--p-primary);
-}
-.scroller-3X7KbA {
-    background-color: var(--p-primary);
-}
+    background: unset;
+    padding: 10px;
+    gap: 10px;
 
-/*Channels*/
-.unread-36eUEm {
-    background-color: var(--alt-active);
-}
-.close-2ISPTL {
-    color: var(--alt-normal);
-}
-.close-2ISPTL:hover {
-    color: var(--alt-hover);
-}
-.message-3KLVy1 {
-    backrground-color: var(--alt-active);
-}
+    --header-primary: #{$white};
+    --header-secondary: #{$white};
 
-.wrapper-1S43wv.muted-19J0ih,
-.wrapper-1S43wv.muted-19J0ih .name-3BUDLf {
-    color: var(--alt-muted);
-}
-.wrapper-1S43wv.muted-19J0ih:hover .icon-3zI3d2,
-.wrapper-1S43wv.muted-19J0ih:hover .name-3BUDLf,
-.wrapper-1S43wv:hover .icon-3zI3d2,
-.wrapper-1S43wv:hover .name-3BUDLf {
-    color: var(--alt-hover);
-}
-.modeMuted-2T4MDZ .icon-2W8DHg,
-.modeMuted-2T4MDZ .name-28HaxV {
-    color: var(--alt-muted);
-}
+    --channels-default: var(--channels-alt);
+    --channel-icon: var(--channels-alt);
 
-.wrapper-CU3qI5.muted-1NRuDm,
-.wrapper-CU3qI5.muted-1NRuDm .name-IbjUBS {
-    color: var(--alt-muted);
-}
-.wrapper-CU3qI5.muted-1NRuDm:hover .icon-WnO6o2,
-.wrapper-CU3qI5.muted-1NRuDm:hover .name-IbjUBS,
-.wrapper-CU3qI5:hover .icon-WnO6o2,
-.wrapper-CU3qI5:hover .name-IbjUBS {
-    color: var(--alt-hover);
-}
+    --interactive-normal: var(--alt-normal);
+    --interactive-hover: var(--alt-hover);
+    --interactive-active: var(--alt-active);
+    --interactive-muted: var(--alt-muted);
+    --text-normal: var(--alt-normal);
+    --text-hover: var(--alt-hover);
+    --text-active: var(--alt-active);
+    --text-muted: var(--alt-muted);
 
-.privateChannels-oVe7HL .container-1oeRFJ {
-    color: var(--channels-alt);
-}
-.privateChannels-oVe7HL .clickable-28SzVr.container-1oeRFJ:active,
-.privateChannels-oVe7HL .highlighted-3PcOfB.container-1oeRFJ,
-.selected-1-Z6gm.container-1oeRFJ {
-    color: var(--alt-active);
-}
-.privateChannels-oVe7HL .clickable-28SzVr.container-1oeRFJ:hover,
-.privateChannels-oVe7HL .clickable-28SzVr.container-1oeRFJ:hover .muted-14PyqW {
-    color: var(--alt-hover);
-}
+    --background-modifier-hover: var(--alt-modifier-hover);
+    --background-modifier-active: var(--alt-modifier-active);
+    --background-modifier-selected: var(--alt-modifier-selected);
+    --background-modifier-accent: var(--alt-modifier-accent);
 
-.wrapper-1ucjTd:hover .content-3at_AU {
-    background-color: var(--alt-modifier-hover);
-}
-.wrapper-1ucjTd:active .content-3at_AU {
-    background-color: var(--alt-modifier-active);
-}
-.modeSelected-1zApJ_ .content-3at_AU,
-.modeSelected-1zApJ_:hover .content-3at_AU {
-    background-color: var(--alt-modifier-selected);
-}
-.header-2o-2hj,
-.title-338goq,
-.header-3OsQeK {
-    color: var(--alt-active);
-}
-.item-2LIpTv {
-    background-color: var(--alt-active);
-}
-.name-28HaxV {
-    color: var(--channels-alt);
-}
-.modeConnected-NrO4cP .name-28HaxV,
-.modeConnected-NrO4cP:hover .name-28HaxV,
-.modeSelected-3DmyhH .name-28HaxV,
-.modeSelected-3DmyhH:hover .name-28HaxV,
-.modeUnread-3Cxepe .name-28HaxV,
-.modeUnread-3Cxepe:hover .name-28HaxV,
-.notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV,
-.notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV {
-    color: var(--alt-active);
-}
-.modeMuted-onO3r:hover .name-28HaxV,
-.wrapper-NhbLHG:hover .name-28HaxV {
-    color: var(--alt-hover);
-}
-.modeMuted-on03r .icon-1_QxNX,
-.modeMuted-3osy7j .name-28HaxV {
-    color: var(--alt-muted);
-}
-.scroller-2TZvBN {
-    background: var(--p-primary);
-}
-.childWrapper-1j_1ub,
-.wrapper-3kah-n {
-    background-color: white;
-}
-.expandedFolderBackground-2sPsd-,
-.folder-21wGz3 {
-    background-color: white;
-}
-.childWrapper-1j_1ub {
-    color: black;
-}
+    // Title
+    &::before {
+        content: "PESTERCHUM 6.0";
+        font-size: 27px;
+        font-weight: 700;
+        text-align: center;
+        color: $white;
+    }
 
-.icon-3BcwQu,
-.username-lm8y6T {
-    color: var(--channels-alt);
-}
-.listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .username-lm8y6T,
-.usernameSpeaking-2xbKKh {
-    color: var(--alt-active);
-}
-.listDefault-2y5Z9D .clickable-23RaYz:hover .username-lm8y6T {
-    color: var(--alt-hover);
+    // Actual channels and userarea
+    .container-1NXEtd,
+    .privateChannels-oVe7HL,
+    .panels-3wFtMD {
+        @include box.default($BG-COLOR: $black, $BORDER-COLOR: $outer-light);
+    }
+
+    // Voice users collapsed
+    .overlap-1yhayD .avatar-3FKimL,
+    .moreContainer-R0kRGB {
+        @include box.default($BG-COLOR: $black);
+        border-radius: $size-max;
+    }
+
+    // Unread bars
+    .bar-wDIGjg {
+        @include box.default($BG-COLOR: $black);
+        border-radius: $size-max;
+    }
+
+    // Voice user limit
+    .wrapper-2fEmwW {
+        .users-2JoyGL,
+        .total-1c5KCN {
+            background: unset;
+        }
+        .total-1c5KCN:after {
+            content: "/";
+            border: 0;
+        }
+    }
+
+    // Show all voice channels
+    .voiceChannelsButton-SRmgo8:hover {
+        background: unset;
+    }
 }

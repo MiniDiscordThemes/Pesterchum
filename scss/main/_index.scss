@@ -1,6 +1,16 @@
-// @forward "./channels";
+@forward "./channels";
 // @forward "./header";
 // @forward "./members";
 // @forward "./messages";
-// @forward "./servers";
+@forward "./servers";
 @forward "./titlebar";
+
+@use "../top/vars" as *;
+
+.bg-1QIAus {
+    background: $inner;
+}
+
+.content-1SgpWY {
+    border: 0.5vh solid $outer-light;
+}

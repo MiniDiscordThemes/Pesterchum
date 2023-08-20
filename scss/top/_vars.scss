@@ -26,5 +26,8 @@ $foreground: var(--chum-foreground);
     --chum-foreground: #{$black};
 }
 
+// Sizes
+$size-max: 999px;
+
 // Fonts
 $font: "courier_prime", "Courier New", Courier, monospace;

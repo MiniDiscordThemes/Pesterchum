@@ -1,11 +1,27 @@
-/* home icon */
-.homeIcon-r0w4ny {
-    background: url(https://i.imgur.com/yeZEnGG.png) center/contain no-repeat;
-    width: 35px;
-    height: 35px;
-    color: transparent;
-}
+@use "../top/vars" as *;
 
-.childWrapper-1j_1ub {
-    background-color: var(--background-primary) !important;
+// Servers list
+.wrapper-1_HaEi {
+    background: unset;
+
+    // Home icon
+    .homeIcon-r0w4ny {
+        background: url(https://i.imgur.com/yeZEnGG.png) center/contain no-repeat;
+        width: 35px;
+        height: 35px;
+        color: transparent;
+    }
+
+    // Icon backgrounds
+    .childWrapper-1j_1ub,
+    .wrapper-3kah-n:hover .childWrapper-1j_1ub,
+    .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
+        background: $background;
+    }
+
+    // Folders
+    .expandedFolderBackground-1kSAf6,
+    .folder-241Joy {
+        background: $background;
+    }
 }
