@@ -1,10 +1,9 @@
-@use "../top/vars" as *;
+@import url("https://minidiscordthemes.github.io/Pesterchum/font/courier_prime/stylesheet.css");
+@import url("https://minidiscordthemes.github.io/Pesterchum/font/courier_new_cyr/stylesheet.css");
 
 // Fonts
-
-@import url("https://winterclover.github.io/Pesterchum-Discord-Theme/fonts/stylesheet.css");
-
 :root {
+    $font: "courier_prime", "courier_new_cyr", "Courier New", Courier, monospace;
     --font-primary: #{$font};
     --font-display: #{$font};
     --font-headline: #{$font};
