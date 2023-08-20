@@ -1,6 +1,6 @@
 @forward "./channels";
 // @forward "./header";
-// @forward "./members";
+@forward "./members";
 // @forward "./messages";
 @forward "./servers";
 @forward "./titlebar";
@@ -13,4 +13,8 @@
 
 .content-1SgpWY {
     border: 0.5vh solid $outer-light;
+
+    .chat-2ZfjoI {
+        background: unset;
+    }
 }

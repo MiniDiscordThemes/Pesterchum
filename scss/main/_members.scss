@@ -1,23 +1,16 @@
-/*Members*/
-.members-3WRCEx {
-    margin: 16px;
-    border: 0.5vh solid;
-    border-color: var(--p-secondary);
-}
-.members-3WRCEx,
-.members-3WRCEx > div {
-    background-color: var(--background-primary);
-}
+@use "../top/vars" as *;
+@use "../top/box";
 
-.member-2gU6Ar.member-48YF_l {
-    background-color: var(--background-primary);
-}
-
-.hiddenMembers-8kpYM0,
-.membersWrap-3NUR2t {
-    background-color: var(--p-primary);
-}
-
+// Members list
 .container-2o3qEW {
-    background-color: var(--p-primary);
+    background: unset;
+
+    .members-3WRCEx {
+        @include box.sync;
+        margin: 16px;
+
+        .member-48YF_l {
+            background: unset;
+        }
+    }
 }
