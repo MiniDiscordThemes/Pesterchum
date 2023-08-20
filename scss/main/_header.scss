@@ -1,34 +1,31 @@
-/*Top Bar*/
-.withFrame-2dL45i,
-.bg-1QIAus {
-    background-color: var(--p-primary);
-}
-.container-ZMc96U .clickable-ZD7xvu .icon-2xnN2Y {
-    color: var(--l-normal);
-}
-.container-ZMc96U .clickable-ZD7xvu:hover .icon-2xnN2Y {
-    color: var(--l-hover);
-}
-.container-ZMc96U .selected-29KTGM .icon-2xnN2Y {
-    color: var(--l-active);
-}
-.icon-2xnN2Y {
-    color: white;
-}
+@use "../top/vars" as *;
+
+// Header bar
 .container-ZMc96U.themed-Hp1KC_ {
-    background-color: var(--p-primary);
-    border-bottom: 2px !important;
+    background: unset;
+
+    .children-3xh0VB::after {
+        background: linear-gradient(90deg, transparent, var(--message-background-alt));
+    }
+
+    .title-17SveM,
+    .topic-11NuQZ,
+    .nicknames-10Sg6e {
+        color: $white;
+    }
 }
-.theme-dark .children-3xh0VB:after,
-.theme-light .children-3xh0VB:after {
-    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, var(--message-background-alt));
-}
-.title-17SveM {
-    color: white;
-}
-.topic-11NuQZ {
-    color: white;
-}
-.nicknames-10Sg6e {
-    color: white;
+
+// Channel icon
+.icon-2xnN2Y {
+    color: $white;
+
+    .clickable-ZD7xvu & {
+        color: $header-normal;
+    }
+    .clickable-ZD7xvu:hover & {
+        color: $header-hover;
+    }
+    .selected-29KTGM & {
+        color: $header-active;
+    }
 }
