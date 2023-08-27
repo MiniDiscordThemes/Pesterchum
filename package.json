@@ -1,9 +1,14 @@
 {
   "name": "pesterchum-discord-theme",
-  "version": "1.0.0",
-  "description": "Emulates the look and feel of the chat clients shown within the webcomic Homestuck.",
+  "version": "1.0.1",
+  "description": "Emulates the look and feel of chat clients shown within the webcomic Homestuck.",
   "repository": "github:MiniDiscordThemes/Pesterchum",
   "author": "Saltssaumure <themes@saltssaumure.net>",
+  "contributors": [
+    "winterClover",
+    "luminaryFlowers (https://lumens.live/)",
+    "Saltssaumure <themes@saltssaumure.net>"
+  ],
   "license": "UNLICENSED",
   "private": true,
   "scripts": {

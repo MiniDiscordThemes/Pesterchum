@@ -23,12 +23,21 @@
 [license]:          https://github.com/MiniDiscordThemes/Pesterchum/blob/main/LICENSE
 [.theme.css]:       https://github.com/MiniDiscordThemes/Pesterchum/blob/main/Pesterchum.theme.css
 
+[pc]:               https://github.com/luminaryFlowers/Pesterchum-Discord-Theme
+[pc-author1]:       https://github.com/winterClover
+[pc-author2]:       https://github.com/luminaryFlowers
+[pc-license]:       none
+
+[squared]:          https://github.com/MiniDiscordThemes/Squared
+[squared-author]:   https://github.com/Saltssaumure
+[squared-license]:  https://github.com/MiniDiscordThemes/Squared/blob/main/LICENSE
+
 [release-bd]:       https://betterdiscord.app/theme/?id=000 "BetterDiscord store page"
 [release-rp]:       https://replugged.dev/store/net.saltssaumure.Pesterchum "Replugged store page"
 [release-bd-gh]:    https://github.com/MiniDiscordThemes/Pesterchum/releases/latest/download/Pesterchum.theme.css "Get latest release"
 [release-rp-gh]:    https://github.com/MiniDiscordThemes/Pesterchum/releases/latest/download/net.saltssaumure.Pesterchum.asar "Get latest release"
 
-# Pestercord Discord Theme
+# Pesterchum Discord Theme
 [![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
 [![BetterDiscord GitHub downloads][shield-bd-dl]][release-bd-gh]
 [![Replugged GitHub downloads][shield-asar-dl]][release-rp-gh]
@@ -99,6 +108,13 @@
 1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
 2. Copy and paste lines 15-20 of [`Pesterchum.theme.css`][.theme.css].
 3. Edit the variable values.
+
+## License
+Unlicensed
+
+### Includes
+- [Pesterchum][pc] by [winterClover][pc-author2] and [luminaryFlowers][pc-author1] - [unlicensed][pc-license]
+- [Squared][squared] by [Saltssaumure][squared-author] - [MIT License][squared-license]
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.
