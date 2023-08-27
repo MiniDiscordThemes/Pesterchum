@@ -1,10 +1,10 @@
 # Folders
-.github
-.parcel-cache
-bundle
-dist
-node_modules
-preview
+/.github
+/.parcel-cache
+/bundle
+/dist
+/node_modules
+/preview
 
 # File types
 *.md
