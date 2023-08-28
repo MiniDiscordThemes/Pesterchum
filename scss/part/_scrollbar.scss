@@ -1,0 +1,41 @@
+@use "../top/vars" as *;
+
+// Scrollbars
+
+// Thick scrollbar
+.auto-2TJ1RH {
+    &::-webkit-scrollbar {
+        width: $size-border * 2;
+        height: $size-border * 2;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $light;
+    }
+
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar-track {
+        border: $size-border solid transparent;
+    }
+}
+
+.scroller-kQBbkU::-webkit-scrollbar-track {
+    margin-bottom: 0;
+}
+
+// Thin scrollbar
+.thin-RnSY0a {
+    &::-webkit-scrollbar {
+        width: $size-border;
+        height: $size-border;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $light;
+    }
+
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar-track {
+        border: $size-border solid transparent;
+    }
+}
