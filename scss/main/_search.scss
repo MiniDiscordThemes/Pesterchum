@@ -1,0 +1,84 @@
+@use "../top/vars" as *;
+@use "../top/box";
+
+// Search results
+.searchResultsWrap-5RVOkx {
+    @include box.highlight;
+
+    // Header
+    .searchHeader-1r_ZSh {
+        background: $medium;
+        --header-primary: #{$black};
+    }
+
+    // Results
+    .scroller-3iiyhZ {
+        padding: 0 10px;
+        padding-right: 10px - $size-border !important;
+    }
+
+    // Channel
+    .searchResultGroup-1lU_-i {
+        // Name
+        .channelNameContainer-4pFmC- {
+            // Channel name
+            --header-primary: #{$black};
+            // Parent channel name
+            --header-secondary: #{$black};
+        }
+
+        // Content
+        .searchResult-O9NDji {
+            @include box.sync;
+            border-top: 0;
+            border-bottom: 0;
+            overflow: unset;
+
+            // Fake top and bottom borders
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                height: $size-border;
+                background: $dark;
+                position: sticky;
+                z-index: 2;
+            }
+
+            &::before {
+                top: 0;
+            }
+            &::after {
+                bottom: 54px;
+            }
+        }
+
+        // Jump button
+        .buttonsContainer-Nmgy7x {
+            display: none;
+        }
+    }
+
+    // Navigation
+    .container-1-h9mY {
+        position: sticky;
+        bottom: 0;
+        background: $medium;
+        z-index: 2;
+        // Text
+        --header-primary: #{$black};
+        --text-normal: #{$black};
+        // Hovered text
+        --interactive-hover: #{$black};
+
+        // Buttons
+        .pageButton-uta6J3 {
+            @include box.default;
+
+            &.activeButton-2K2Fwx {
+                border-color: $light;
+                color: $black;
+            }
+        }
+    }
+}

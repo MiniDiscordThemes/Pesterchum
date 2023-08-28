@@ -1,0 +1,28 @@
+@use "../top/vars" as *;
+
+// Thread split view
+.chatTarget-3H6mpC,
+.container-3XgAHv {
+    background: $medium;
+}
+
+.chat-1-OBC7,
+.chat-25x62K {
+    padding: 16px;
+
+    &::before {
+        display: none;
+    }
+}
+
+// Floating thread view
+.floating-3M3WeH {
+    filter: none;
+    border-left: $size-border solid $light;
+}
+
+// Resize thread handle
+.resizeHandle-PBRzPC {
+    width: $size-border;
+    background: $light;
+}
