@@ -2,49 +2,67 @@
 @use "../top/box";
 
 // Chat
+
+// Header bar (eg. this channel is not on your channel list)
+.chatHeaderBar-31g1mU {
+    @include box.highlight($BG-COLOR: $background);
+
+    &::after {
+        display: none;
+    }
+}
+
+// Chat main panel
 .chatContent-3KubbW {
     gap: 16px;
     background: unset;
+
     // Chat
     .messagesWrapper-RpOMA3 {
         @include box.sync;
     }
 
-    // Message area
-    .form-3gdLxP {
-        padding: 0;
+    // Bars
+    .newMessagesBar-1hF-9G,
+    .jumpToPresentBar-1cEnH0 {
+        background: $dark;
+    }
+}
 
-        &::before {
-            display: none;
+// Message area
+.form-3gdLxP {
+    padding: 0;
+
+    &::before {
+        display: none;
+    }
+
+    .channelTextArea-1FufC0 {
+        @include box.sync;
+        box-sizing: border-box;
+
+        &.channelTextAreaDisabled-1p2fQv {
+            background: $dark;
         }
 
-        .channelTextArea-1FufC0 {
-            @include box.sync;
-            box-sizing: border-box;
-
-            &.channelTextAreaDisabled-1p2fQv {
-                background: $dark;
-            }
-
-            .themedBackground-3uF0xW {
-                background: unset;
-            }
+        .themedBackground-3uF0xW {
+            background: unset;
         }
+    }
 
-        // Accessories
-        .base-3bcbY3 {
+    // Accessories
+    .base-3bcbY3 {
+        color: $black;
+        inset: auto 0 0;
+
+        // Typing
+        .dots-1k2MxY.themed-3dHGSa {
             color: $black;
-            inset: auto 0 0;
+        }
 
-            // Typing
-            .dots-1k2MxY.themed-3dHGSa {
-                color: $black;
-            }
-
-            // Slow mode
-            .cooldownWrapper-2k1jHK {
-                color: $black !important;
-            }
+        // Slow mode
+        .cooldownWrapper-2k1jHK {
+            color: $black !important;
         }
     }
 }
