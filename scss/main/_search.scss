@@ -1,5 +1,6 @@
 @use "../top/vars" as *;
 @use "../top/box";
+@use "../top/sticky";
 
 // Search results
 .searchResultsWrap-5RVOkx {
@@ -30,27 +31,7 @@
         // Content
         .searchResult-O9NDji {
             @include box.sync;
-            border-top: 0;
-            border-bottom: 0;
-            overflow: unset;
-
-            // Fake top and bottom borders
-            &::before,
-            &::after {
-                content: "";
-                display: block;
-                height: $size-border;
-                background: $dark;
-                position: sticky;
-                z-index: 2;
-            }
-
-            &::before {
-                top: 0;
-            }
-            &::after {
-                bottom: 54px;
-            }
+            @include sticky.box($BOTTOM: 54px);
         }
 
         // Jump button

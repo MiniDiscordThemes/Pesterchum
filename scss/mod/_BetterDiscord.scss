@@ -1,0 +1,10 @@
+@use "../top/vars" as *;
+
+.bd-sidebar-header {
+    .bd-icon {
+        fill: $black;
+    }
+    .bd-sidebar-header-label {
+        color: $black;
+    }
+}

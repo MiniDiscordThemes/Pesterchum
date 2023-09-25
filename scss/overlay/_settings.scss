@@ -1,0 +1,98 @@
+@use "../top/vars" as *;
+@use "../top/box";
+@use "../top/sticky";
+
+// Any layer
+.layer-86YKbF {
+    opacity: 1 !important;
+
+    // Settings layer
+    + .layer-86YKbF {
+        background: unset;
+        backdrop-filter: blur(2px) brightness(0.7);
+        align-items: center;
+
+        div:has(> .standardSidebarView-E9Pc3j) {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
+
+// Settings modal
+.standardSidebarView-E9Pc3j {
+    @include box.highlight;
+    padding: 10px;
+    left: unset;
+    right: unset;
+    bottom: 20px;
+    top: 20px;
+
+    .platform-win & {
+        top: 22px + 20px;
+    }
+
+    .sidebarRegion-1VBisG {
+        flex: 0 0 var(--custom-standard-sidebar-view-sidebar-total-width);
+    }
+    .sidebarRegionScroller-FXiQOh {
+        background: $medium;
+    }
+    .sidebar-nqHbhN {
+        padding: 0 6px 0 0;
+
+        // Item
+        :is(.item-2GWPIy.item-2GWPIy.item-2GWPIy, .item-2GWPIy.item-2GWPIy.item-2GWPIy:hover) {
+            @include sticky.box;
+            padding: 0;
+
+            &.selected-1sf9UK::before,
+            &.selected-1sf9UK::after {
+                background: $light;
+            }
+
+            &::before {
+                margin-bottom: 6px;
+            }
+            &::after {
+                margin-top: 6px;
+            }
+        }
+
+        // Separator
+        .separator-2N511j {
+            background: unset;
+        }
+
+        // Group header
+        .header-2F5_LB,
+        // Socials
+        .link-1-SDSV {
+            color: $black;
+        }
+
+        // Group header category
+        .headerText-10ez_d {
+            display: flex;
+
+            .category-CysNYv {
+                color: $black !important;
+                order: -1;
+
+                &::after {
+                    content: "\00a0/\00a0";
+                }
+            }
+        }
+
+        // Version info
+        .info-3pQQBb .line-18uChy {
+            color: $black !important;
+        }
+    }
+
+    .contentRegionScroller-2_GT_N {
+        @include box.sync;
+    }
+}

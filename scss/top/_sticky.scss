@@ -1,0 +1,25 @@
+@use "./vars" as *;
+
+@mixin box($TOP: 0, $BOTTOM: 0) {
+    border-top: 0;
+    border-bottom: 0;
+    overflow: unset;
+
+    // Fake top and bottom borders
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        height: $size-border;
+        background: $dark;
+        position: sticky;
+        z-index: 2;
+    }
+
+    &::before {
+        top: $TOP;
+    }
+    &::after {
+        bottom: $BOTTOM;
+    }
+}
