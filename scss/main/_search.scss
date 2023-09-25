@@ -39,6 +39,11 @@
             display: none;
         }
     }
+    &:not(:has(.pageControlContainer-1Mbe6M)) {
+        .searchResult-O9NDji::after {
+            bottom: 20px;
+        }
+    }
 
     // Navigation
     .container-1-h9mY {
