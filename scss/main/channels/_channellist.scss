@@ -3,6 +3,23 @@
 
 // Server channels list
 .container-1NXEtd {
+    $banner-height: calc((var(--chum-sidebar-width) - (2 * 10px) - (2 * 0.5vh)) / 240 * 135);
+
+    // Banner
+    .animatedContainer-2laTjx {
+        height: $banner-height;
+    }
+    .bannerImage-ubW8K-,
+    .bannerImg-2PzH6z {
+        width: inherit;
+    }
+    .bannerImg-2PzH6z {
+        height: unset;
+    }
+    div[style="height: 12px;"] {
+        height: calc($banner-height - 48px - 84px) !important;
+    }
+
     // Voice users collapsed
     .overlap-1yhayD .avatar-3FKimL,
     .moreContainer-R0kRGB {

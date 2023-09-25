@@ -9,7 +9,8 @@
     background: unset;
     padding: 10px;
     gap: 10px;
-    width: 300px;
+    width: var(--chum-sidebar-width);
+    box-sizing: border-box;
 
     --header-primary: #{$white};
     --header-secondary: #{$white};

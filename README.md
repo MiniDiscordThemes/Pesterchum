@@ -5,6 +5,7 @@
 [light]:            https://cdn.discordapp.com/attachments/1142305515439923260/1142576246480437348/pesterchumlight.png
 
 [css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+[css-length]:       https://developer.mozilla.org/en-US/docs/Web/CSS/length
 [discord]:          https://discord.gg/uy8nKQVatp
 
 [BetterDiscord]:    https://betterdiscord.app/
@@ -82,11 +83,12 @@
 
 ## Customisation
 
-| Description          | Variable name   | Valid values             | Default value |
-| -------------------- | --------------- | ------------------------ | ------------- |
-| Common border colour | `--chum-dark`   | Any [colour][css-color]. | #C48A00       |
-| Main colour          | `--chum-medium` | Any [colour][css-color]. | #FDB302       |
-| Bright border colour | `--chum-light`  | Any [colour][css-color]. | #FFF700       |
+| Description          | Variable name          | Valid values              | Default value |
+| -------------------- | ---------------------- | ------------------------- | ------------- |
+| Common border colour | `--chum-dark`          | Any [colour][css-color].  | `#C48A00`     |
+| Main colour          | `--chum-medium`        | Any [colour][css-color].  | `#FDB302`     |
+| Bright border colour | `--chum-light`         | Any [colour][css-color].  | `#FFF700`     |
+| Sidebar width        | `--chum-sidebar-width` | Any [length][css-length]. | `300px`       |
 
 ### BetterDiscord
 1. Open `Settings` > `BetterDiscord` > `Themes`.
@@ -96,7 +98,7 @@
 ### Replugged
 1. Enable `Automatically Apply Quick CSS` in `Settings` > `Replugged` > `General`.
 1. Open `Settings` > `Replugged` > `Quick CSS`.
-3. Copy and paste lines 15-20 of [`Pesterchum.theme.css`][.theme.css].
+3. Copy and paste lines 15-21 of [`Pesterchum.theme.css`][.theme.css].
 3. Edit the variable values and save.
 
 ### Vencord
@@ -106,7 +108,7 @@
 4. Edit the variable values and save.
 #### Online
 1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
-2. Copy and paste lines 15-20 of [`Pesterchum.theme.css`][.theme.css].
+2. Copy and paste lines 15-21 of [`Pesterchum.theme.css`][.theme.css].
 3. Edit the variable values.
 
 ## License
