@@ -1,3 +1,4 @@
+@forward "./channellist";
 @forward "./userpanel";
 
 @use "../../top/vars" as *;
@@ -44,35 +45,5 @@
     .privateChannels-oVe7HL,
     .panels-3wFtMD {
         @include box.highlight($black);
-    }
-
-    // Voice users collapsed
-    .overlap-1yhayD .avatar-3FKimL,
-    .moreContainer-R0kRGB {
-        @include box.black;
-        border-radius: $size-max;
-    }
-
-    // Unread bars
-    .bar-wDIGjg {
-        @include box.black;
-        border-radius: $size-max;
-    }
-
-    // Voice user limit
-    .wrapper-2fEmwW {
-        .users-2JoyGL,
-        .total-1c5KCN {
-            background: unset;
-        }
-        .total-1c5KCN:after {
-            content: "/";
-            border: 0;
-        }
-    }
-
-    // Show all voice channels
-    .voiceChannelsButton-SRmgo8:hover {
-        background: unset;
     }
 }
