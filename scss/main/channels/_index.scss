@@ -36,7 +36,7 @@
         font-size: 27px;
         font-weight: 700;
         text-align: center;
-        color: $white;
+        colour: $white;
     }
 
     // Actual channels and userarea
@@ -74,5 +74,10 @@
     // Show all voice channels
     .voiceChannelsButton-SRmgo8:hover {
         background: unset;
+    }
+
+    // server banner
+    .bannerImage-ubW8K-, .bannerImg-2PzH6z {
+        width: inherit !important;
     }
 }
