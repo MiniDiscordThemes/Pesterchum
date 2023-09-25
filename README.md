@@ -44,7 +44,7 @@
 [![Replugged GitHub downloads][shield-asar-dl]][release-rp-gh]
 [![Total repository size][shield-repo-size]][github]
 
-***Emulates the look and feel of the [chat clients][wiki] shown within the webcomic [Homestuck][homestuck].***
+***Emulates the [Pesterchum][wiki] chat client from [Homestuck][homestuck].***
 
 | Dark mode                                      | Light mode                                       |
 | ---------------------------------------------- | ------------------------------------------------ |

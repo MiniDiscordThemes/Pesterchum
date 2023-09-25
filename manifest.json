@@ -1,23 +1,23 @@
 {
   "id": "net.saltssaumure.Pesterchum",
   "name": "Pesterchum",
-  "description": "Emulates the look and feel of chat clients shown within the webcomic Homestuck.",
+  "description": "Emulates the Pesterchum chat client from Homestuck.",
   "author": [
     {
-      "name": "winterClover",
-      "github": "winterClover"
+      "name": "Saltssaumure",
+      "discordID": "134142022092062720",
+      "github": "Saltssaumure"
     },
     {
       "name": "luminaryFlowers",
       "github": "luminaryFlowers"
     },
     {
-      "name": "Saltssaumure",
-      "discordID": "134142022092062720",
-      "github": "Saltssaumure"
+      "name": "winterClover",
+      "github": "winterClover"
     }
   ],
-  "version": "1.1.0",
+  "version": "1.2.0",
   "updater": {
     "type": "store",
     "id": "net.saltssaumure.Pesterchum"
