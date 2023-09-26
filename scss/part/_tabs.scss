@@ -1,0 +1,17 @@
+@use "../top/vars" as *;
+@use "../top/box";
+
+// Tabs
+
+.item-2GWPIy.item-2GWPIy.item-2GWPIy.item-2GWPIy {
+    &,
+    &:hover {
+        @include box.default;
+        background: $medium;
+        color: $black;
+    }
+    &.selected-1sf9UK {
+        border-color: $light;
+        background: $medium;
+    }
+}

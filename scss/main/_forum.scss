@@ -1,0 +1,160 @@
+@use "../top/vars" as *;
+@use "../top/box";
+
+// Forum main panel
+.container-3wLKDe {
+    gap: 16px;
+    background: unset;
+
+    // Forum
+    .list-3FIpnh {
+        @include box.default;
+
+        & > div:first-child {
+            padding: 0 12px;
+            padding-right: 12px - ($size-border * 2);
+        }
+
+        // Post maker and posts
+        .mainCard-3KBsBI {
+            @include box.sync;
+
+            &.isOpen-2Gyel_ {
+                border-color: $light;
+            }
+
+            // Pinned post
+            .pinIcon-3I5-gm {
+                background: $dark;
+            }
+        }
+        .container-q2_DnH:hover {
+            transform: none;
+        }
+
+        // Post maker results
+        .matchingPostsRow-2IiEQ1 {
+            background: unset;
+            --text-normal: #{$black};
+
+            .text-xs-normal-3O7EaX,
+            .text-xs-semibold-GgBYxI {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        // Post guidelines
+        .container-3arpDl {
+            @include box.sync;
+            .descriptionContainer-2ylKGk {
+                background: unset;
+            }
+        }
+
+        // Filter by tag
+        .tagsContainer-2bBw1x {
+            // Divider
+            .divider-2bkesd {
+                width: $size-border;
+                background: $dark;
+            }
+
+            // Sort and view
+            // See all tags
+            .sortDropdown-hY93nR,
+            .tagsButton-4pwOKH {
+                @include box.default;
+                --interactive-normal: #{$black};
+
+                &[aria-expanded="true"] {
+                    border-color: $light;
+                }
+            }
+            .tagsButton-4pwOKH {
+                padding: 0;
+
+                // Tag counter
+                .countContainer-3uQ087 {
+                    background: unset;
+                }
+                .countText-1d5thl {
+                    color: $black;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+
+// Tags
+.pill-3pRQlO {
+    @include box.default;
+    --text-normal: #{$black};
+
+    &.clickable-3YTfAq:not(.disabled-3Rezaw):hover {
+        background: $medium;
+    }
+
+    &.selected-24z1Ou.selected-24z1Ou {
+        border-color: $light;
+        background: $medium;
+    }
+}
+
+// Unset forum minimum width
+.grid-21dB-S > div:first-child,
+.headerRow-1MKoR-,
+.list-3FIpnh > div:first-child {
+    min-width: unset;
+    box-sizing: border-box;
+}
+
+// Forum post info
+.scrollerInner-2PPAp2 {
+    overflow: unset;
+    .container-3YcgdM {
+        background: unset;
+        pointer-events: none;
+        border-top: 0;
+        top: 0;
+
+        .reactButtons-FRvFhI,
+        .buttons-BK5gED {
+            pointer-events: all;
+        }
+    }
+    .divider-AZrXIA {
+        display: none;
+    }
+
+    // Post action buttons
+    .addReactButton-3bSQb6,
+    .buttonInner-3aRbcx {
+        @include box.default;
+        color: $black;
+
+        &.active-OdlCV- {
+            @include box.highlight;
+        }
+
+        &:hover,
+        &:hover .icon-fX2J7U {
+            color: $black;
+        }
+    }
+
+    // Reaction
+    .reaction-102jx9 {
+        @include box.default;
+
+        &.reactionMe-2zhiyZ {
+            @include box.highlight;
+        }
+
+        .reactionCount-SWXh9W {
+            color: $black;
+        }
+    }
+}

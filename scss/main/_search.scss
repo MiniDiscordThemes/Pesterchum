@@ -1,0 +1,70 @@
+@use "../top/vars" as *;
+@use "../top/box";
+@use "../top/sticky";
+
+// Search results
+.searchResultsWrap-5RVOkx {
+    @include box.highlight;
+
+    // Header
+    .searchHeader-1r_ZSh {
+        background: $medium;
+        --header-primary: #{$black};
+    }
+
+    // Results
+    .scroller-3iiyhZ {
+        padding: 0 10px;
+        padding-right: 10px - $size-border !important;
+    }
+
+    // Channel
+    .searchResultGroup-1lU_-i {
+        // Name
+        .channelNameContainer-4pFmC- {
+            // Channel name
+            --header-primary: #{$black};
+            // Parent channel name
+            --header-secondary: #{$black};
+        }
+
+        // Content
+        .searchResult-O9NDji {
+            @include box.sync;
+            @include sticky.box($BOTTOM: 54px);
+        }
+
+        // Jump button
+        .buttonsContainer-Nmgy7x {
+            display: none;
+        }
+    }
+    &:not(:has(.pageControlContainer-1Mbe6M)) {
+        .searchResult-O9NDji::after {
+            bottom: 20px;
+        }
+    }
+
+    // Navigation
+    .container-1-h9mY {
+        position: sticky;
+        bottom: 0;
+        background: $medium;
+        z-index: 2;
+        // Text
+        --header-primary: #{$black};
+        --text-normal: #{$black};
+        // Hovered text
+        --interactive-hover: #{$black};
+
+        // Buttons
+        .pageButton-uta6J3 {
+            @include box.default;
+
+            &.activeButton-2K2Fwx {
+                border-color: $light;
+                color: $black;
+            }
+        }
+    }
+}

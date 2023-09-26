@@ -1,9 +1,12 @@
 @forward "./channels";
 @forward "./dm";
+@forward "./forum";
 @forward "./header";
 @forward "./members";
 @forward "./messages";
+@forward "./search";
 @forward "./servers";
+@forward "./split";
 @forward "./titlebar";
 
 @use "../top/vars" as *;
@@ -13,12 +16,12 @@
 }
 
 .content-1SgpWY {
-    border: 0.5vh solid $light;
+    border: $size-border solid $light;
 
     .chat-2ZfjoI,
     .container-2cd8Mz {
         background: unset;
-        border-left: 0.5vh solid $light;
+        border-left: $size-border solid $light;
 
         .content-1jQy2l,
         .tabBody-2dgbAs {

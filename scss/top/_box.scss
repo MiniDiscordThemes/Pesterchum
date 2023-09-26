@@ -2,7 +2,7 @@
 
 @mixin default($BG-COLOR: $medium, $BORDER-COLOR: $dark) {
     background: $BG-COLOR;
-    border: 0.5vh solid $BORDER-COLOR;
+    border: $size-border solid $BORDER-COLOR;
 }
 
 @mixin highlight($BG-COLOR: $medium) {

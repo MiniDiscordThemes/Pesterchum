@@ -1,7 +1,7 @@
 {
   "name": "pesterchum-discord-theme",
-  "version": "1.1.0",
-  "description": "Emulates the look and feel of chat clients shown within the webcomic Homestuck.",
+  "version": "1.2.0",
+  "description": "A Discord theme emulating the Pesterchum chat client from Homestuck.",
   "repository": "github:MiniDiscordThemes/Pesterchum",
   "author": "Saltssaumure <themes@saltssaumure.net>",
   "contributors": [
@@ -26,9 +26,9 @@
     "@parcel/config-default": "^2.9.3",
     "@parcel/core": "^2.9.3",
     "@parcel/transformer-sass": "^2.9.3",
-    "@types/node": "^20.4.5",
-    "prettier": "^3.0.0",
-    "replugged": "^4.6.0",
+    "@types/node": "^20.7.0",
+    "prettier": "^3.0.3",
+    "replugged": "^4.6.3",
     "salt-bd-scss": "^1.1.0"
   }
 }
