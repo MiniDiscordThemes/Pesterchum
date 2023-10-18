@@ -13,7 +13,7 @@
 }
 
 // Chat main panel
-.chatContent-3KubbW {
+:is(.chatContent-3KubbW, .chatContent-2O4SXb) {
     gap: 16px;
     background: unset;
 
@@ -30,14 +30,14 @@
 }
 
 // Message area
-.form-3gdLxP {
+:is(.form-3gdLxP, .form-3qe0Ni) {
     padding: 0;
 
     &::before {
         display: none;
     }
 
-    .channelTextArea-1FufC0 {
+    :is(.channelTextArea-1FufC0, .channelTextArea-1deLlK) {
         @include box.sync;
         box-sizing: border-box;
 
