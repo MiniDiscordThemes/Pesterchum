@@ -18,12 +18,12 @@
 .content-1SgpWY {
     border: $size-border solid $light;
 
-    .chat-2ZfjoI,
+    :is(.chat-2ZfjoI, .chat-9g_3Xj),
     .container-2cd8Mz {
         background: unset;
         border-left: $size-border solid $light;
 
-        .content-1jQy2l,
+        :is(.content-1jQy2l, .content-18rAwf),
         .tabBody-2dgbAs {
             padding: 16px;
             gap: 16px;

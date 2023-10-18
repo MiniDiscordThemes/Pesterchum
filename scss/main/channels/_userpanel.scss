@@ -2,9 +2,9 @@
 @use "../../top/box";
 
 .panels-3wFtMD {
-    .panel-2ZFCRb,
-    .container-1zzFcN,
-    .container-YkUktl {
+    :is(.panel-2ZFCRb, .panel-ufc1-o),
+    :is(.container-1zzFcN, .container-2NLBJg),
+    :is(.container-YkUktl, .container-1CH86i) {
         background: unset;
     }
 
@@ -14,7 +14,7 @@
     }
 
     // Now playing
-    .panel-2ZFCRb {
+    :is(.panel-2ZFCRb, .panel-ufc1-o) {
         border-bottom: 0;
 
         // Name
@@ -24,17 +24,17 @@
     }
 
     // Voice controls
-    .container-1zzFcN {
+    :is(.container-1zzFcN, .container-2NLBJg) {
         border-bottom: 0;
 
         // Channel name
-        .channel-3prF2u {
+        :is(.channel-3prF2u, .channel-2vy8ff) {
             color: $grey;
         }
 
         // Activity buttons
-        .actionButtons-2vEOUh {
-            .button-1EGGcP:not(.disabledButtonWrapper-1m0hYZ) {
+        :is(.actionButtons-2vEOUh, .actionButtons-1DmM2g) {
+            :is(.button-1EGGcP, .button-2gNyE9):not(.disabledButtonWrapper-1m0hYZ) {
                 @include box.default;
                 height: 36px;
                 color: $black;
@@ -54,10 +54,10 @@
     }
 
     // User controls
-    .container-YkUktl {
+    :is(.container-YkUktl, .container-1CH86i) {
         margin-bottom: 0;
 
-        .avatarWrapper-1B9FTW {
+        :is(.avatarWrapper-1B9FTW, .avatarWrapper-12uuu4) {
             margin: 0;
             padding-left: 0;
         }

@@ -2,13 +2,13 @@
 @use "../top/box";
 
 // Members list
-.container-2o3qEW {
+:is(.container-2o3qEW, .container-2vWgD2) {
     background: unset;
 }
-.members-3WRCEx {
+:is(.members-3WRCEx, .members-2y1nVj) {
     @include box.sync;
 
-    .member-48YF_l {
+    :is(.member-48YF_l, .member-2iQhp7) {
         background: unset;
     }
 }

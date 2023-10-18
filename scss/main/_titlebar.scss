@@ -3,7 +3,7 @@
 // Titlebar
 
 // Logo
-.wordmark-2u86JB {
+:is(.wordmark-2u86JB, .wordmark-3wYFg6) {
     visibility: hidden;
     padding: 0;
 
@@ -18,6 +18,6 @@
 }
 
 // Windows buttons
-.winButton-3UMjdg {
+:is(.winButton-3UMjdg, .winButton-3SigSb) {
     color: $white;
 }

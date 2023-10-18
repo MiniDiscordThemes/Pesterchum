@@ -1,8 +1,8 @@
 @use "../top/vars" as *;
 
 // Thread split view
-.chatTarget-3H6mpC,
-.container-3XgAHv {
+:is(.chatTarget-3H6mpC, .chatTarget-1ROClP),
+:is(.container-3XgAHv, .container-3s2w-i) {
     background: $medium;
 }
 
@@ -16,13 +16,13 @@
 }
 
 // Floating thread view
-.floating-3M3WeH {
+:is(.floating-3M3WeH, .floating-1T0kDs) {
     filter: none;
     border-left: $size-border solid $light;
 }
 
 // Resize thread handle
-.resizeHandle-PBRzPC {
+:is(.resizeHandle-PBRzPC, .resizeHandle-2F4Beb) {
     width: $size-border * 1.5;
     background: $light;
 }
