@@ -5,93 +5,93 @@
 // DMs
 
 // DM list
-.privateChannels-oVe7HL {
-    .scroller-WSmht3 {
+.privateChannels__93473 {
+    .scroller__4b984 {
         background: unset;
 
         // Primary channels
-        .channel-1Shao0 {
+        .channel_c21703 {
             max-width: unset;
 
             // Friends channel
-            &:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .name-2m3Cms {
+            &:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .name__02dbd {
                 @include replace.text("Chums", 16px);
                 height: 20px;
             }
         }
 
         // DM header
-        .headerText-1qIDDT {
+        .headerText__051c0 {
             @include replace.text("Chumroll", 12px);
         }
     }
 }
 
 // Header
-.container-ZMc96U {
+.container__11d72 {
     // Friends title
-    &:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .title-17SveM {
+    &:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .title__9e2b0 {
         @include replace.text("Chums", 16px);
     }
 
     // Friend tabs
-    .item-2GWPIy {
+    .item__48dda {
         @include box.highlight;
         color: $black;
 
-        &.themed-qqoYp3:hover:not(.disabled-2G98Nl),
-        &.themed-qqoYp3.selected-1sf9UK.item-2GWPIy,
-        &.addFriend-emTWY1.addFriend-emTWY1 {
+        &.themed_b957e8:hover:not(.disabled__85bca),
+        &.themed_b957e8.selected__5711d.item__48dda,
+        &.addFriend__80542.addFriend__80542 {
             background-color: $light;
             color: $black;
         }
     }
 
     // Add friend button
-    .addFriend-emTWY1 span {
+    .addFriend__80542 span {
         @include replace.text("Add Chum", 16px);
         height: 20px;
     }
 
-    .akaBadge-3i7V3p {
+    .akaBadge__7df41 {
         background: $black;
         color: $white;
     }
 }
 
 // DM call container
-.wrapper-1gVUIN.minimum-fXpVNc {
+.wrapper_bd2abe.minimum_ebf000 {
     background: unset;
 
-    .quickSelectLabel-ArUyd9,
-    .quickSelect-384d3G,
-    .controlIcon-10O-4h.themeable-2nUqEz {
+    .quickSelectLabel_cf5c1b,
+    .quickSelect_ae48d2,
+    .controlIcon__25700.themeable__8c5dc {
         color: $black;
     }
 
     // Square buttons
-    .controlButton-2PMNom {
+    .controlButton_ab2899 {
         @include box.default;
-        .colorable-3rVGna.primaryDark-2UJt1G,
-        .colorable-3rVGna.primaryLight-1yA273 {
+        .colorable_c84c4c.primaryDark__6b700,
+        .colorable_c84c4c.primaryLight__19ab7 {
             background: unset;
         }
     }
 }
 
 // People
-.peopleColumn-1wMU14 {
+.peopleColumn__51df3 {
     @include box.sync;
 }
 
 // Active now
-.nowPlayingColumn-1eCBCN {
+.nowPlayingColumn_f5023f {
     @include box.sync;
 
-    .container-1oAagU {
+    .container__0a6a9 {
         background: unset;
 
-        .scroller-hE2gWq {
+        .scroller__00e7e {
             border-left: 0;
             margin-left: 0;
         }
@@ -99,11 +99,11 @@
 }
 
 // User profile panel
-.profilePanel-2VBkh8 {
+.profilePanel__12596 {
     @include box.sync;
 
-    .userProfileOuterUnthemed-11rPfA,
-    .userPanelInnerThemed-3YO1BB {
+    .userProfileOuterUnthemed__48723,
+    .userPanelInnerThemed__1804b {
         background: unset;
     }
 }

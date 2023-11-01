@@ -3,14 +3,14 @@
 
 // Tabs
 
-.item-2GWPIy.item-2GWPIy.item-2GWPIy.item-2GWPIy {
+.item__48dda.item__48dda.item__48dda.item__48dda {
     &,
     &:hover {
         @include box.default;
         background: $medium;
         color: $black;
     }
-    &.selected-1sf9UK {
+    &.selected__5711d {
         border-color: $light;
         background: $medium;
     }

@@ -3,16 +3,16 @@
 @use "../top/sticky";
 
 // Any layer
-.layer-86YKbF {
+.layer__2efaa {
     opacity: 1 !important;
 
     // Settings layer
-    + .layer-86YKbF {
+    + .layer__2efaa {
         background: unset;
         backdrop-filter: blur(2px) brightness(0.7);
         align-items: center;
 
-        div:has(> .standardSidebarView-E9Pc3j) {
+        div:has(> .standardSidebarView__1129a) {
             display: flex;
             justify-content: center;
             width: 100%;
@@ -21,7 +21,7 @@
 }
 
 // Settings modal
-.standardSidebarView-E9Pc3j {
+.standardSidebarView__1129a {
     @include box.highlight;
     padding: 10px;
     left: unset;
@@ -33,22 +33,22 @@
         top: 22px + 20px;
     }
 
-    .sidebarRegion-1VBisG {
+    .sidebarRegion__60457 {
         flex: 0 0 var(--custom-standard-sidebar-view-sidebar-total-width);
     }
-    .sidebarRegionScroller-FXiQOh {
+    .sidebarRegionScroller__1fa7e {
         background: $medium;
     }
-    .sidebar-nqHbhN {
+    .sidebar__9e3e2 {
         padding: 0 6px 0 0;
 
         // Item
-        :is(.item-2GWPIy.item-2GWPIy.item-2GWPIy, .item-2GWPIy.item-2GWPIy.item-2GWPIy:hover) {
+        :is(.item__48dda.item__48dda.item__48dda, .item__48dda.item__48dda.item__48dda:hover) {
             @include sticky.box;
             padding: 0;
 
-            &.selected-1sf9UK::before,
-            &.selected-1sf9UK::after {
+            &.selected__5711d::before,
+            &.selected__5711d::after {
                 background: $light;
             }
 
@@ -61,19 +61,19 @@
         }
 
         // Separator
-        .separator-2N511j {
+        .separator_fdbcfd {
             background: unset;
         }
 
         // Group header
-        .header-2F5_LB,
+        .header_f72511,
         // Socials
-        .link-1-SDSV {
+        .link_b006df {
             color: $black;
         }
 
         // Group header category
-        .headerText-10ez_d {
+        .headerText__94c22 {
             display: flex;
 
             .category-CysNYv {
@@ -87,12 +87,12 @@
         }
 
         // Version info
-        .info-3pQQBb .line-18uChy {
+        .info__755e1 .line__75801 {
             color: $black !important;
         }
     }
 
-    .contentRegionScroller-2_GT_N {
+    .contentRegionScroller__86c79 {
         @include box.sync;
     }
 }

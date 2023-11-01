@@ -11,20 +11,20 @@
 
 @use "../top/vars" as *;
 
-.bg-1QIAus {
+.bg__12180 {
     background: $medium;
 }
 
-.content-1SgpWY {
+.content__4bf10 {
     border: $size-border solid $light;
 
-    :is(.chat-2ZfjoI, .chat-9g_3Xj),
-    .container-2cd8Mz {
+    .chat__52833,
+    .container__5c7e7 {
         background: unset;
         border-left: $size-border solid $light;
 
-        :is(.content-1jQy2l, .content-18rAwf),
-        .tabBody-2dgbAs {
+        .content__1a4fe,
+        .tabBody_b3d268 {
             padding: 16px;
             gap: 16px;
 

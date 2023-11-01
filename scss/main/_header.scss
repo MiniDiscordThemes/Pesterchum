@@ -1,32 +1,32 @@
 @use "../top/vars" as *;
 
 // Header bar
-.container-ZMc96U:is(:is(.title-31SJ6t, .title-5wgnIa), .themed-Hp1KC_) {
+.container__11d72:is(.title_b7d661, .themed_b152d4) {
     background: unset;
 
-    .children-3xh0VB::after {
+    .children__32014::after {
         background: linear-gradient(90deg, transparent, var(--message-background-alt));
     }
 
-    .title-17SveM,
-    .topic-11NuQZ,
-    .nicknames-10Sg6e {
+    .title__9e2b0,
+    .topic__16ae3,
+    .nicknames__7447d {
         color: $black;
     }
 
-    .divider-q3P9HC {
+    .divider_c09b64 {
         display: none;
     }
 
-    .searchBar-jGtisZ {
+    .searchBar_e0c60b {
         background: $background;
     }
 
     // Channel icon
-    .icon-2xnN2Y,
-    .clickable-ZD7xvu .icon-2xnN2Y,
-    .clickable-ZD7xvu:hover .icon-2xnN2Y,
-    .selected-29KTGM .icon-2xnN2Y {
+    .icon__4cb88,
+    .clickable_d23a1a .icon__4cb88,
+    .clickable_d23a1a:hover .icon__4cb88,
+    .selected_be2668 .icon__4cb88 {
         color: $black;
     }
 }

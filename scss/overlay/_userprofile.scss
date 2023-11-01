@@ -3,30 +3,30 @@
 @use "../top/replace";
 
 // User profile
-.userProfileOuter-2tQwNf {
+.userProfileOuter__46bb7 {
     @include box.default;
 
     // Background
-    .userProfileInner-1ngKnf {
+    .userProfileInner__8065b {
         background: $medium;
     }
-    .overlayBackground-2aa7wt {
+    .overlayBackground__86b78 {
         background: unset;
     }
 
     // Text
-    .defaultColor-1EVLSt {
+    .defaultColor__77578 {
         color: $black;
     }
 
     // Icon
-    .avatar-31d8He {
+    .avatar__991e2 {
         background: $dark;
     }
 
     // Badges
-    .profileBadges-2pItdR,
-    .badgeList-2aoHPw {
+    .profileBadges__7a7cb,
+    .badgeList_c193e3 {
         @include box.sync;
         padding: 0;
 
@@ -42,47 +42,47 @@
             height: 35px;
             color: $black;
 
-            .contents-3NembX {
+            .contents_fb6220 {
                 @include replace.text("Pester");
             }
         }
 
         // More options
-        .additionalActionsIcon-3Cy8UU,
-        .additionalActionsIcon-3Cy8UU:hover {
+        .additionalActionsIcon__33de0,
+        .additionalActionsIcon__33de0:hover {
             color: $black;
         }
     }
 
     // Name
-    .userTagUsernameBase-267ALn,
-    .discriminator-hnHkyt {
+    .userTagUsernameBase__75fb1,
+    .discriminator_a801dd {
         color: $black;
     }
-    .discrimBase-v65kTs {
+    .discrimBase_e0c4c5 {
         color: $grey;
     }
 
     // Status
-    .customStatus-19KW6v,
+    .customStatus__3aa7f,
     .customStatus-3qYNe4 {
         color: $grey;
     }
 
     // Tabs
-    .tabBarContainer-sCZC4w {
+    .tabBarContainer__63f55 {
         border-bottom: 0;
 
-        .tabBar-2hXqzU {
+        .tabBar__35f81 {
             gap: 10px;
 
-            .item-2GWPIy {
+            .item__48dda {
                 @include box.highlight;
                 color: $black;
                 padding: 8px;
                 box-sizing: border-box;
 
-                &.selected-1sf9UK,
+                &.selected__5711d,
                 &:hover {
                     border-bottom-color: $dark;
                 }
@@ -101,83 +101,83 @@
     }
 
     // Divider
-    .divider-2dDziJ {
+    .divider_ed0c1d {
         display: none;
     }
 
     // Section title
-    .title-3CjiSS {
+    .title_ef4a6d {
         color: $grey;
     }
 
     // Member since
-    .memberSinceContainer-2CBD23 {
-        .discordIcon-32mgeP {
+    .memberSinceContainer__0a28b {
+        .discordIcon_feeef1 {
             color: $black;
         }
     }
 
     // Activity
-    .activity-3uaYny {
-        .headerText-3g1XK9 {
+    .activity__20c1e {
+        .headerText__7d203 {
             color: $grey;
         }
-        .activityName-3YXl6e,
-        .content-tXPNDw,
-        .details-2-ciHo,
-        .name-1-Q7l2,
-        .nameNormal-2fPMD2,
-        .nameWrap-3TyM52 {
+        .activityName__47e51,
+        .content_d7cb7f,
+        .details__445eb,
+        .name_b6124d,
+        .nameNormal__1d540,
+        .nameWrap__7263f {
             color: $black;
         }
     }
 
     // Roles
-    .role-2TIOKu {
+    .role__631a3 {
         @include box.sync;
         box-sizing: content-box;
         padding: 0;
-        .roleNameOverflow-Xok3NR {
+        .roleNameOverflow_c35412 {
             color: $foreground;
         }
     }
 
     // Note
-    .note-1NN2aP,
-    .note-3M15gE {
+    .note_ba0c31,
+    .note_ba0c31 {
         @include box.sync;
-        .textarea-_59yqs {
+        .textarea_c5a7a3 {
             color: $foreground;
         }
     }
 
     // Message
-    .messageInputContainer-24qqTx {
+    .messageInputContainer__768e6 {
         @include box.sync;
-        .messageInput-1enlaJ {
+        .messageInput__3b049 {
             color: $foreground;
         }
     }
 
     // Connected accounts
-    .connectedAccountContainer-3aLMHJ {
+    .connectedAccountContainer__23f00 {
         @include box.sync;
     }
 
     // Server or friend
-    .listRow-2nO1T6 {
-        .listName-PwbeHL,
-        .guildNick-fe8oPN {
+    .listRow__60937 {
+        .listName_dbd44a,
+        .guildNick__01069 {
             color: $grey;
         }
     }
 }
 
 // Themed
-.userProfileOuterThemed-2BgJCM.userPopoutOuter-1OHwPL,
-.userProfileOuterThemed-2BgJCM.userProfileOuter-2tQwNf {
+.userProfileOuterThemed__6eb84.userPopoutOuter_d739b2,
+.userProfileOuterThemed__6eb84.userProfileOuter__46bb7 {
     padding: 0;
 }
-.userProfileInner-1ngKnf::before {
+.userProfileInner__8065b::before {
     display: none;
 }
