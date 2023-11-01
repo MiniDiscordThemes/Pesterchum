@@ -1,40 +1,40 @@
 @use "../../top/vars" as *;
 @use "../../top/box";
 
-.panels-3wFtMD {
-    :is(.panel-2ZFCRb, .panel-ufc1-o),
-    :is(.container-1zzFcN, .container-2NLBJg),
-    :is(.container-YkUktl, .container-1CH86i) {
+.panels__58331 {
+    .panel_bd8c76,
+    .container_d667ff,
+    .container_ca50b9 {
         background: unset;
     }
 
     // Button icons
-    .button-12Fmur {
+    .button__4f306 {
         color: $white;
     }
 
     // Now playing
-    :is(.panel-2ZFCRb, .panel-ufc1-o) {
+    .panel_bd8c76 {
         border-bottom: 0;
 
         // Name
-        .title-338goq {
+        .title__10613 {
             color: $white;
         }
     }
 
     // Voice controls
-    :is(.container-1zzFcN, .container-2NLBJg) {
+    .container_d667ff {
         border-bottom: 0;
 
         // Channel name
-        :is(.channel-3prF2u, .channel-2vy8ff) {
+        .channel_d7d412 {
             color: $grey;
         }
 
         // Activity buttons
-        :is(.actionButtons-2vEOUh, .actionButtons-1DmM2g) {
-            :is(.button-1EGGcP, .button-2gNyE9):not(.disabledButtonWrapper-1m0hYZ) {
+        .actionButtons_b58cbb {
+            .button__66e8c:not(.disabledButtonWrapper__69c70) {
                 @include box.default;
                 height: 36px;
                 color: $black;
@@ -42,10 +42,10 @@
             }
 
             // Disabled button
-            .disabledButtonWrapper-1m0hYZ {
+            .disabledButtonWrapper__69c70 {
                 height: 36px;
 
-                .contents-3NembX {
+                .contents_fb6220 {
                     display: flex;
                     align-items: center;
                 }
@@ -54,10 +54,10 @@
     }
 
     // User controls
-    :is(.container-YkUktl, .container-1CH86i) {
+    .container_ca50b9 {
         margin-bottom: 0;
 
-        :is(.avatarWrapper-1B9FTW, .avatarWrapper-12uuu4) {
+        .avatarWrapper_ba5175 {
             margin: 0;
             padding-left: 0;
         }

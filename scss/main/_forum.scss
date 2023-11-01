@@ -2,12 +2,12 @@
 @use "../top/box";
 
 // Forum main panel
-.container-3wLKDe {
+.container_b181b6 {
     gap: 16px;
     background: unset;
 
     // Forum
-    .list-3FIpnh {
+    .list__5ced9 {
         @include box.default;
 
         & > div:first-child {
@@ -16,54 +16,54 @@
         }
 
         // Post maker and posts
-        .mainCard-3KBsBI {
+        .mainCard__8a660 {
             @include box.sync;
 
-            &.isOpen-2Gyel_ {
+            &.isOpen__8593d {
                 border-color: $light;
             }
 
             // Pinned post
-            .pinIcon-3I5-gm {
+            .pinIcon__39b6e {
                 background: $dark;
             }
         }
-        .container-q2_DnH:hover {
+        .container__99b06:hover {
             transform: none;
         }
 
         // Post maker results
-        .matchingPostsRow-2IiEQ1 {
+        .matchingPostsRow__510be {
             background: unset;
             --text-normal: #{$black};
 
-            .text-xs-normal-3O7EaX,
-            .text-xs-semibold-GgBYxI {
+            .text-xs-normal_ccc5fb,
+            .text-xs-semibold__2181c {
                 font-size: 14px;
                 line-height: 18px;
             }
         }
 
         // Post guidelines
-        .container-3arpDl {
+        .container__1b27a {
             @include box.sync;
-            .descriptionContainer-2ylKGk {
+            .descriptionContainer__3814d {
                 background: unset;
             }
         }
 
         // Filter by tag
-        .tagsContainer-2bBw1x {
+        .tagsContainer_e0ece5 {
             // Divider
-            .divider-2bkesd {
+            .divider__0a999 {
                 width: $size-border;
                 background: $dark;
             }
 
             // Sort and view
             // See all tags
-            .sortDropdown-hY93nR,
-            .tagsButton-4pwOKH {
+            .sortDropdown_ec3016,
+            .tagsButton_e96762 {
                 @include box.default;
                 --interactive-normal: #{$black};
 
@@ -71,14 +71,14 @@
                     border-color: $light;
                 }
             }
-            .tagsButton-4pwOKH {
+            .tagsButton_e96762 {
                 padding: 0;
 
                 // Tag counter
-                .countContainer-3uQ087 {
+                .countContainer__1b48f {
                     background: unset;
                 }
-                .countText-1d5thl {
+                .countText__6ebee {
                     color: $black;
                     font-size: 14px;
                     line-height: 18px;
@@ -89,15 +89,15 @@
 }
 
 // Tags
-.pill-3pRQlO {
+.pill_f055c3 {
     @include box.default;
     --text-normal: #{$black};
 
-    &.clickable-3YTfAq:not(.disabled-3Rezaw):hover {
+    &.clickable__8b375:not(.disabled__70fda):hover {
         background: $medium;
     }
 
-    &.selected-24z1Ou.selected-24z1Ou {
+    &.selected_dc72d1.selected_dc72d1 {
         border-color: $light;
         background: $medium;
     }
@@ -105,55 +105,55 @@
 
 // Unset forum minimum width
 .grid-21dB-S > div:first-child,
-.headerRow-1MKoR-,
-.list-3FIpnh > div:first-child {
+.headerRow__16d8e,
+.list__5ced9 > div:first-child {
     min-width: unset;
     box-sizing: border-box;
 }
 
 // Forum post info
-.scrollerInner-2PPAp2 {
+.scrollerInner__059a5 {
     overflow: unset;
-    .container-3YcgdM {
+    .container__8ee50 {
         background: unset;
         pointer-events: none;
         border-top: 0;
         top: 0;
 
-        .reactButtons-FRvFhI,
-        .buttons-BK5gED {
+        .reactButtons__261af,
+        .buttons__1995d {
             pointer-events: all;
         }
     }
-    .divider-AZrXIA {
+    .divider_ffec75 {
         display: none;
     }
 
     // Post action buttons
-    .addReactButton-3bSQb6,
-    .buttonInner-3aRbcx {
+    .addReactButton__59750,
+    .buttonInner__2771e {
         @include box.default;
         color: $black;
 
-        &.active-OdlCV- {
+        &.active_f1266e {
             @include box.highlight;
         }
 
         &:hover,
-        &:hover .icon-fX2J7U {
+        &:hover .icon__9ea62 {
             color: $black;
         }
     }
 
     // Reaction
-    .reaction-102jx9 {
+    .reaction_fef95b {
         @include box.default;
 
-        &.reactionMe-2zhiyZ {
+        &.reactionMe__98f57 {
             @include box.highlight;
         }
 
-        .reactionCount-SWXh9W {
+        .reactionCount_b49901 {
             color: $black;
         }
     }

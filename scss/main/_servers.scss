@@ -1,11 +1,11 @@
 @use "../top/vars" as *;
 
 // Servers list
-.wrapper-1_HaEi {
+.wrapper_a7e7a8 {
     background: unset;
 
     // Home icon
-    .homeIcon-r0w4ny {
+    .homeIcon__00b1b {
         background: url("https://minidiscordthemes.github.io/Pesterchum/img/home.avif") center/contain no-repeat;
         width: 35px;
         height: 35px;
@@ -13,15 +13,15 @@
     }
 
     // Icon backgrounds
-    .childWrapper-1j_1ub,
-    .wrapper-3kah-n:hover .childWrapper-1j_1ub,
-    .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
+    .childWrapper__01b9c,
+    .wrapper_d281dd:hover .childWrapper__01b9c,
+    .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c {
         background: $background;
     }
 
     // Folders
-    .expandedFolderBackground-1kSAf6,
-    .folder-241Joy {
+    .expandedFolderBackground__1bec6,
+    .folder__17546 {
         background: $background;
     }
 }

@@ -1,13 +1,13 @@
 @use "../top/vars" as *;
 
 // Thread split view
-:is(.chatTarget-3H6mpC, .chatTarget-1ROClP),
-:is(.container-3XgAHv, .container-3s2w-i) {
+.chatTarget__0ea5e,
+.container_def45c {
     background: $medium;
 }
 
-.chat-1-OBC7,
-.chat-25x62K {
+.chat__1d65d,
+.chat__4eed1 {
     padding: 16px;
 
     &::before {
@@ -16,13 +16,13 @@
 }
 
 // Floating thread view
-:is(.floating-3M3WeH, .floating-1T0kDs) {
+.floating_f021e2 {
     filter: none;
     border-left: $size-border solid $light;
 }
 
 // Resize thread handle
-:is(.resizeHandle-PBRzPC, .resizeHandle-2F4Beb) {
+.resizeHandle_f1a098 {
     width: $size-border * 1.5;
     background: $light;
 }

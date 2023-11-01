@@ -5,7 +5,7 @@
 @use "../../top/box";
 
 // Channels
-.sidebar-1tnWFu {
+.sidebar_ded4b5 {
     background: unset;
     padding: 10px;
     gap: 10px;
@@ -42,9 +42,9 @@
     }
 
     // Actual channels and userarea
-    .container-1NXEtd,
-    .privateChannels-oVe7HL,
-    .panels-3wFtMD {
+    .container__590e2,
+    .privateChannels__93473,
+    .panels__58331 {
         @include box.highlight($black);
     }
 }

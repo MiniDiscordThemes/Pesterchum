@@ -4,7 +4,7 @@
 // Chat
 
 // Header bar (eg. this channel is not on your channel list)
-.chatHeaderBar-31g1mU {
+.chatHeaderBar__28ee6 {
     @include box.highlight($BG-COLOR: $background);
 
     &::after {
@@ -13,55 +13,55 @@
 }
 
 // Chat main panel
-:is(.chatContent-3KubbW, .chatContent-2O4SXb) {
+.chatContent__5dca8 {
     gap: 16px;
     background: unset;
 
     // Chat
-    .messagesWrapper-RpOMA3 {
+    .messagesWrapper_ea2b0b {
         @include box.sync;
     }
 
     // Bars
-    .newMessagesBar-1hF-9G,
-    .jumpToPresentBar-1cEnH0 {
+    .newMessagesBar__8b6d7,
+    .jumpToPresentBar__0ff7f {
         background: $dark;
     }
 }
 
 // Message area
-:is(.form-3gdLxP, .form-3qe0Ni) {
+.form__13a2c {
     padding: 0;
 
     &::before {
         display: none;
     }
 
-    :is(.channelTextArea-1FufC0, .channelTextArea-1deLlK) {
+    .channelTextArea__2e60f {
         @include box.sync;
         box-sizing: border-box;
 
-        &.channelTextAreaDisabled-1p2fQv {
+        &.channelTextAreaDisabled_c43b1c {
             background: $dark;
         }
 
-        .themedBackground-3uF0xW {
+        .themedBackground__6b1b6 {
             background: unset;
         }
     }
 
     // Accessories
-    .base-3bcbY3 {
+    .base__512ed {
         color: $black;
         inset: auto 0 0;
 
         // Typing
-        .dots-1k2MxY.themed-3dHGSa {
+        .dots_a97068.themed__4f364 {
             color: $black;
         }
 
         // Slow mode
-        .cooldownWrapper-2k1jHK {
+        .cooldownWrapper_de448f {
             color: $black !important;
         }
     }
