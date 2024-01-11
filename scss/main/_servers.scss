@@ -5,18 +5,17 @@
     background: unset;
 
     // Home icon
-    .homeIcon__00b1b {
-        background: url("https://minidiscordthemes.github.io/Pesterchum/img/home.avif") center/contain no-repeat;
-        width: 35px;
-        height: 35px;
+    .childWrapper__01b9c:has([d^="M19.73 4.87"]) {
+        background: url("https://minidiscordthemes.github.io/Pesterchum/img/home.avif") center/80% no-repeat $background;
         color: transparent;
     }
 
     // Icon backgrounds
     .childWrapper__01b9c,
     .wrapper_d281dd:hover .childWrapper__01b9c,
-    .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c {
-        background: $background;
+    .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c,
+    .circleIconButton_d8df29 {
+        background-color: $background;
     }
 
     // Folders
