@@ -9,6 +9,11 @@
     .animatedContainer__341f6 {
         height: $banner-height;
     }
+    // Prevent banner overlapping outer
+    .animatedContainer__341f6,
+    .bannerImage__39c51 {
+        transform: none !important;
+    }
     .bannerImage__39c51,
     .bannerImg_c85b7f {
         width: inherit;
