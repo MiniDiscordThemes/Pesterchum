@@ -14,7 +14,7 @@
             max-width: unset;
 
             // Friends channel
-            &:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .name__02dbd {
+            &:has(path[d^="M3 5v-.75"]) .name__02dbd {
                 @include replace.text("Chums", 16px);
                 height: 20px;
             }
@@ -30,7 +30,7 @@
 // Header
 .container__11d72 {
     // Friends title
-    &:has(path[d^="M0.5,0 L0.5,1.5 C0.5,5.65 2.71,9.28 6,11.3"]) .title__9e2b0 {
+    &:has(path[d^="M3 5v-.75"]) .title__9e2b0 {
         @include replace.text("Chums", 16px);
     }
 
@@ -44,6 +44,11 @@
         &.addFriend__80542.addFriend__80542 {
             background-color: $light;
             color: $black;
+        }
+
+        // Blocked tab
+        &:nth-last-child(2) {
+            @include replace.text("Trollslum", 16px);
         }
     }
 
@@ -82,6 +87,75 @@
 // People
 .peopleColumn__51df3 {
     @include box.sync;
+
+    // Sad wumpus: Wumpus is waiting on friends. You don't have to, though!
+    .image__98a59[style*="bca918618b884a382ab5.svg"] + .flexChild__6e093 .text__1c14c {
+        @include replace.text("Wumpus has no chums.", 16px);
+    }
+
+    // All tab
+    &#all-tab {
+        .title_dc625c {
+            position: relative;
+            overflow: visible;
+            margin-inline-start: calc(30px - 1.2em);
+
+            &::before {
+                content: "All chums";
+                position: absolute;
+                background: $background;
+                padding-left: 1.2em;
+            }
+        }
+    }
+
+    // Blocked tab
+    &#blocked-tab {
+        .title_dc625c {
+            position: relative;
+            overflow: visible;
+            margin-inline-start: calc(30px + 1.2em);
+
+            &::before {
+                content: "Trollslum";
+                position: absolute;
+                background: $background;
+                left: -1.2em;
+            }
+        }
+    }
+
+    // Add friend tab
+    &#add_friend-tab {
+        // Title: Add friend
+        .title_c627bb {
+            @include replace.text("Add Chum", 16px);
+        }
+
+        // Subtitle: You can add friends with their Discord usernames.
+        .description__7af71:first-child {
+            @include replace.text("You can add chums with their chumhandles.", 14px);
+        }
+
+        // Input: You can add friends with their Discord usernames.
+        .input_d266e7::placeholder {
+            color: transparent;
+        }
+
+        // Button: Send Friend Request
+        .button_afdfd9 {
+            @include box.default;
+
+            .contents_fb6220 {
+                @include replace.text("Send chum request");
+            }
+        }
+
+        // Title: Other places to make friends
+        .title_bd1ead {
+            @include replace.text("Other places to make chums", 16px);
+        }
+    }
 }
 
 // Active now
