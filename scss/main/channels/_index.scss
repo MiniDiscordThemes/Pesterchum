@@ -12,26 +12,6 @@
     width: var(--chum-sidebar-width);
     box-sizing: border-box;
 
-    --header-primary: #{$white};
-    --header-secondary: #{$white};
-
-    --channels-default: #{$channel};
-    --channel-icon: #{$channel};
-
-    --interactive-normal: #{$normal-content};
-    --interactive-hover: #{$hover-content};
-    --interactive-active: #{$active-content};
-    --interactive-muted: #{$muted-content};
-    --text-normal: #{$normal-content};
-    --text-hover: #{$hover-content};
-    --text-active: #{$active-content};
-    --text-muted: #{$muted-content};
-
-    --background-modifier-hover: #{$hover-bg};
-    --background-modifier-active: #{$active-bg};
-    --background-modifier-selected: #{$selected-bg};
-    --background-modifier-accent: #{$accent-bg};
-
     // Title
     &::before {
         content: "PESTERCHUM 6.0";
@@ -45,6 +25,6 @@
     .container__590e2,
     .privateChannels__93473,
     .panels__58331 {
-        @include box.highlight($black);
+        @include box.highlight($background);
     }
 }

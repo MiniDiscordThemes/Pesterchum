@@ -8,36 +8,21 @@
         background: unset;
     }
 
-    // Button icons
-    .button__4f306 {
-        color: $white;
-    }
-
     // Now playing
     .panel_bd8c76 {
         border-bottom: 0;
-
-        // Name
-        .title__10613 {
-            color: $white;
-        }
     }
 
     // Voice controls
     .container_d667ff {
         border-bottom: 0;
 
-        // Channel name
-        .channel_d7d412 {
-            color: $grey;
-        }
-
         // Activity buttons
         .actionButtons_b58cbb {
             .button__66e8c:not(.disabledButtonWrapper__69c70) {
                 @include box.default;
                 height: 36px;
-                color: $black;
+                color: $background;
                 padding: 0;
             }
 
