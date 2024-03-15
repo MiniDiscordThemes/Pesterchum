@@ -35,15 +35,22 @@
         }
     }
 
-    // Send friend request
-    .relationshipButtons-3ByBpj {
-        .actionButton-iarQTd {
+    // Friend request button
+    .relationshipButtons__5efdd {
+        .actionButton_dac582 {
             @include box.highlight;
             height: 35px;
             color: $black;
 
+            // Send friend request
+            // Send message
             .contents_fb6220 {
                 @include replace.text("Pester");
+            }
+
+            // Friend request sent
+            &:disabled .contents_fb6220 {
+                @include replace.text("Chum request sent");
             }
         }
 
@@ -93,7 +100,7 @@
                 }
 
                 // Mutual friends tab
-                &:last-child {
+                &:nth-last-child(2) {
                     @include replace.text("Mutual Chums");
                 }
             }
