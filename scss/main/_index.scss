@@ -4,6 +4,7 @@
 @forward "./header";
 @forward "./members";
 @forward "./messages";
+@forward "./messagesspecial";
 @forward "./search";
 @forward "./servers";
 @forward "./split";
@@ -18,8 +19,8 @@
 .content__4bf10 {
     border: $size-border solid $light;
 
-    .chat__52833,
-    .container__5c7e7 {
+    .sidebar_ded4b5 + :is(div, main):not(.erd_scroll_detection_container),
+    .sidebar_ded4b5 + .erd_scroll_detection_container + :is(div, main):not(.erd_scroll_detection_container) {
         background: unset;
         border-left: $size-border solid $light;
 

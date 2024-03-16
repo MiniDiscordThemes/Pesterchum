@@ -3,6 +3,7 @@
 // Scrollbars
 
 // Thick scrollbar
+.auto__76cc7,
 .auto_a48086 {
     &::-webkit-scrollbar {
         width: $size-border * 2;
@@ -24,7 +25,8 @@
 }
 
 // Thin scrollbar
-.thin_b1c063 {
+.thin_b1c063,
+.thin__62e51 {
     &::-webkit-scrollbar {
         width: $size-border;
         height: $size-border;

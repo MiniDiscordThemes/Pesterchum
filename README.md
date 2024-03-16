@@ -1,8 +1,9 @@
 [wiki]:             https://mspaintadventures.fandom.com/wiki/Chat_client#Pesterchum
 [homestuck]:        https://www.homestuck.com/story/25
 
-[dark]:             https://cdn.discordapp.com/attachments/1142305515439923260/1142576246165876927/pesterchumdark.png
-[light]:            https://cdn.discordapp.com/attachments/1142305515439923260/1142576246480437348/pesterchumlight.png
+[screenshot]:       https://minidiscordthemes.github.io/Pesterchum/preview/chum.png
+[dark]:             https://minidiscordthemes.github.io/Pesterchum/preview/dark.png
+[light]:            https://minidiscordthemes.github.io/Pesterchum/preview/light.png
 
 [css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
 [css-length]:       https://developer.mozilla.org/en-US/docs/Web/CSS/length
@@ -45,6 +46,8 @@
 [![Total repository size][shield-repo-size]][github]
 
 ***Emulates the [Pesterchum][wiki] chat client from [Homestuck][homestuck].***
+
+![Screenshot of Friends tab with Pesterchum theme applied][screenshot]
 
 | Dark mode                                      | Light mode                                       |
 | ---------------------------------------------- | ------------------------------------------------ |

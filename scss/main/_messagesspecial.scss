@@ -1,0 +1,191 @@
+@use "../top/vars" as *;
+@use "../top/box";
+
+// Server guide
+.scrollerBase__2b744:has(.homeContainer_a4aa0a) {
+    @include box.default;
+    margin: 16px;
+
+    .row__70f4c,
+    .sidebarCardWrapper__2c840 {
+        @include box.sync;
+    }
+}
+
+// Channels and roles
+.header__60bef:has(path[d^="M18.5 23"]) + .container__10dc7.container__10dc7.container__10dc7 {
+    @include box.default;
+    margin: 16px;
+    padding: 0;
+    gap: 0;
+
+    // Background
+    .emptyPage__3e15d,
+    .scrollerContainer_bf5dbd,
+    .container__7590f {
+        background: unset;
+    }
+
+    // Tabs
+    .tabBar_d4764b {
+        border-bottom: 0;
+
+        .tabBarItem_cd23b7 {
+            padding: 2px 8px;
+        }
+
+        // Channel count
+        .textBadge__45d79 {
+            --background-accent: #{$dark};
+        }
+    }
+
+    // Customisation questions main title
+    .heading-md-semibold__574c7 {
+        --header-primary: #{$black};
+
+        + .text-xs-normal__56c35 {
+            --text-muted: #{$black};
+        }
+    }
+
+    // Choose all that apply
+    .helpText__1564e {
+        --text-muted: #{$black};
+    }
+
+    // Customisation question group
+    .prompt__1b100 {
+        border: none;
+        background: unset;
+
+        // Option
+        .optionButtonWrapper__4072c {
+            @include box.sync;
+
+            &.selected__90dd8 {
+                @include box.highlight($background);
+
+                .checkIcon__5aa1f {
+                    background: $light;
+
+                    path {
+                        fill: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    // Profile preview
+    .profileCard_bd55ee {
+        @include box.sync;
+    }
+
+    // Search for channels
+    .container__7712a {
+        @include box.sync;
+    }
+
+    // Channel group header
+    .categoryRow_df4323 {
+        --text-muted: #{$black};
+
+        .checkbox_c7f690 {
+            background: $black !important;
+            border: none;
+        }
+    }
+
+    // Channel
+    .channelRow__96673 {
+        @include box.sync;
+        border-top-width: 0;
+        border-bottom-width: 0;
+
+        &.firstChannel__94f31 {
+            border-top-width: 4px;
+        }
+
+        &.lastChannel__129f1 {
+            border-bottom-width: 4px;
+        }
+    }
+
+    // Separators
+    .separator__3cfd2 {
+        display: none;
+    }
+}
+
+// Server shop
+.content_d4d412 {
+    @include box.sync;
+    margin: 16px;
+    padding: 0;
+    padding-right: 0 !important;
+
+    // Box for some reason
+    .contentContainer_d0e511 {
+        width: auto;
+    }
+
+    // Banner
+    .container__5a6b1 {
+        background: unset;
+        box-shadow: none;
+        border: none;
+
+        .coverImageContainer_b56a3b {
+            width: unset;
+        }
+    }
+
+    // Support options
+    .container_cdfd0b {
+        padding: 16px;
+
+        // Item
+        .tab_cc2f20 {
+            @include box.default;
+            box-shadow: none;
+
+            &.selected__70739 {
+                @include box.highlight;
+                box-shadow: none;
+            }
+
+            .text-sm-semibold__41578,
+            .text-xs-normal__56c35 {
+                color: $black !important;
+            }
+        }
+    }
+
+    .tabContainer_d1d15f {
+        border-top: 0;
+    }
+
+    // Perk card
+    .cardContainerWithoutTopIndicator_d7edfe {
+        @include box.default;
+
+        --header-primary: #{$black};
+        --header-secondary: #{$black};
+        --interactive-active: #{$black};
+        --interactive-normal: #{$black};
+        --text-muted: #{$black};
+        --text-normal: #{$black};
+
+        .tierInfoContainer__80b01,
+        .subscriptionPerks__2f4e5 {
+            background: unset;
+        }
+
+        // Preview
+        .roleMessagePreview__8088a {
+            @include box.sync;
+            --text-normal: #{$foreground};
+        }
+    }
+}

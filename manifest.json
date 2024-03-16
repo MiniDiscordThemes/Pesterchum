@@ -1,7 +1,7 @@
 {
   "id": "net.saltssaumure.Pesterchum",
   "name": "Pesterchum",
-  "description": "Emulates the Pesterchum chat client from Homestuck.",
+  "description": "Emulates the Pesterchum chat client from Homestuck. See GitHub for customisation options.",
   "author": [
     {
       "name": "Saltssaumure",
@@ -17,7 +17,7 @@
       "github": "winterClover"
     }
   ],
-  "version": "1.4.1",
+  "version": "1.5.0",
   "updater": {
     "type": "store",
     "id": "net.saltssaumure.Pesterchum"
@@ -27,11 +27,8 @@
   "main": "scss/chum.scss",
   "source": "https://github.com/MiniDiscordThemes/Pesterchum",
   "image": [
-    "https://cdn.discordapp.com/attachments/1142305515439923260/1142576246165876927/pesterchumdark.png",
-    "https://cdn.discordapp.com/attachments/1142305515439923260/1142576246480437348/pesterchumlight.png",
-    "https://cdn.discordapp.com/attachments/1142305515439923260/1142576246748893325/pesterchum1.png",
-    "https://cdn.discordapp.com/attachments/1142305515439923260/1142576247067648200/pesterchum2.png",
-    "https://cdn.discordapp.com/attachments/1142305515439923260/1142576247575150642/pesterchum3.png",
-    "https://cdn.discordapp.com/attachments/1142305515439923260/1142576247872966766/pesterchum4.png"
+    "https://i.imgur.com/y84rg1f.png",
+    "https://i.imgur.com/lolHUD9.png",
+    "https://i.imgur.com/1gqGyQI.png"
   ]
 }

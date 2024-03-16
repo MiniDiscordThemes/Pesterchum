@@ -4,6 +4,11 @@
 .container__11d72:is(.title_b7d661, .themed_b152d4) {
     background: unset;
 
+    // No shadow
+    &::before {
+        display: none;
+    }
+
     .children__32014::after {
         background: linear-gradient(90deg, transparent, var(--message-background-alt));
     }
@@ -18,7 +23,8 @@
         display: none;
     }
 
-    .searchBar_e0c60b {
+    .searchBar_e0c60b,
+    .searchBar__1cca4 {
         background: $background;
     }
 
@@ -28,5 +34,8 @@
     .clickable_d23a1a:hover .icon__4cb88,
     .selected_be2668 .icon__4cb88 {
         color: $black;
+    }
+    .iconWrapper_af9215 path {
+        fill: $black;
     }
 }

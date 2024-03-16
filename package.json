@@ -1,6 +1,6 @@
 {
   "name": "pesterchum-discord-theme",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "A Discord theme emulating the Pesterchum chat client from Homestuck.",
   "repository": "github:MiniDiscordThemes/Pesterchum",
   "author": "Saltssaumure <themes@saltssaumure.net>",
@@ -24,8 +24,8 @@
     "release": "replugged release"
   },
   "devDependencies": {
-    "prettier": "^3.1.1",
-    "replugged": "^4.7.7",
-    "salt-bd-scss": "^1.2.1"
+    "prettier": "^3.2.5",
+    "replugged": "^4.7.9",
+    "salt-bd-scss": "^1.2.2"
   }
 }
