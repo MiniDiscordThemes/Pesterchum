@@ -27,7 +27,7 @@
     }
 }
 
-// Header
+// Friends header (for other headers see _header.scss)
 .container__11d72 {
     // Friends title
     &:has(path[d^="M3 5v-.75"]) .title__9e2b0 {
@@ -45,11 +45,11 @@
             background-color: $light;
             color: $black;
         }
+    }
 
-        // Blocked tab
-        &:nth-last-child(2) {
-            @include replace.text("Trollslum", 16px);
-        }
+    // Blocked tab
+    &:has(path[d^="M3 5v-.75"]) .item__48dda:nth-last-child(2) {
+        @include replace.text("Trollslum", 16px);
     }
 
     // Add friend button
@@ -178,6 +178,28 @@
 
     .userProfileOuterUnthemed__48723,
     .userPanelInnerThemed__1804b {
+        background: unset;
+    }
+}
+
+// Library, Nitro, Shop
+:is(.scroller__311cd, .scroller_a1aadd) {
+    @include box.sync;
+    margin: 16px;
+
+    // Library header
+    .header_b5ab54 {
+        background: unset;
+    }
+}
+
+// Shop
+.shopScrollBackgroundPrimary_bb1f42 {
+    @include box.sync;
+    margin: 16px;
+    height: calc(100% - 80px);
+
+    .pageWrapperBackgroundPrimary__74f14 {
         background: unset;
     }
 }

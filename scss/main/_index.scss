@@ -18,8 +18,7 @@
 .content__4bf10 {
     border: $size-border solid $light;
 
-    .chat__52833,
-    .container__5c7e7 {
+    .sidebar_ded4b5 + :is(div, main) {
         background: unset;
         border-left: $size-border solid $light;
 
