@@ -7,7 +7,8 @@
     background: unset;
 
     // Forum
-    .list__5ced9 {
+    .list__5ced9,
+    .grid__36f14 {
         @include box.default;
 
         & > div:first-child {
@@ -19,13 +20,24 @@
         .mainCard__8a660 {
             @include box.sync;
 
-            &.isOpen__8593d {
+            // Opened post
+            &.isOpen_d88bb6 {
                 border-color: $light;
             }
 
             // Pinned post
             .pinIcon__39b6e {
                 background: $dark;
+            }
+
+            // Gallery mode text
+            .contentPreview_b317ee {
+                background: unset;
+                border: none;
+
+                .textContentFooter__5a630 {
+                    background: linear-gradient(to top, $background, transparent);
+                }
             }
         }
         .container__99b06:hover {
@@ -89,7 +101,7 @@
 }
 
 // Tags
-.pill_f055c3 {
+.pill_f055c3.pill_f055c3 {
     @include box.default;
     --text-normal: #{$black};
 
@@ -135,25 +147,27 @@
         @include box.default;
         color: $black;
 
-        &.active_f1266e {
+        &.active_f2e487 {
             @include box.highlight;
         }
 
         &:hover,
-        &:hover .icon__9ea62 {
+        &:active .icon_b0b9a4,
+        &.active_f2e487 .icon_b0b9a4,
+        &:hover .icon_b0b9a4 {
             color: $black;
         }
     }
 
     // Reaction
-    .reaction_fef95b {
+    .reaction_b90ab0 {
         @include box.default;
 
-        &.reactionMe__98f57 {
+        &.reactionMe_bf6909 {
             @include box.highlight;
         }
 
-        .reactionCount_b49901 {
+        .reactionCount__60448 {
             color: $black;
         }
     }
