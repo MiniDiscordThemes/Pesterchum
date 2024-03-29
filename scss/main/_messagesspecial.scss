@@ -2,27 +2,27 @@
 @use "../top/box";
 
 // Server guide
-.scrollerBase__2b744:has(.homeContainer_a4aa0a) {
+.scrollerBase__65223:has(.homeContainer_c36871) {
     @include box.default;
     margin: 16px;
 
-    .row__70f4c,
-    .sidebarCardWrapper__2c840 {
+    .row__4f559,
+    .sidebarCardWrapper__98124 {
         @include box.sync;
     }
 }
 
 // Channels and roles
-.header__60bef:has(path[d^="M18.5 23"]) + .container__10dc7.container__10dc7.container__10dc7 {
+.header__71942:has(path[d^="M18.5 23"]) + .container__03ec9.container__03ec9.container__03ec9 {
     @include box.default;
     margin: 16px;
     padding: 0;
     gap: 0;
 
     // Background
-    .emptyPage__3e15d,
-    .scrollerContainer_bf5dbd,
-    .container__7590f {
+    .emptyPage_feb902,
+    .scrollerContainer_dda72c,
+    .container__6b2e5 {
         background: unset;
     }
 
@@ -30,27 +30,27 @@
     .tabBar_d4764b {
         border-bottom: 0;
 
-        .tabBarItem_cd23b7 {
+        .tabBarItem__60c37 {
             padding: 2px 8px;
         }
 
         // Channel count
-        .textBadge__45d79 {
+        .textBadge_f05120 {
             --background-accent: #{$dark};
         }
     }
 
     // Customisation questions main title
-    .heading-md-semibold__574c7 {
+    .heading-md-semibold__76ba1 {
         --header-primary: #{$black};
 
-        + .text-xs-normal__56c35 {
+        + .text-xs-normal__46d75 {
             --text-muted: #{$black};
         }
     }
 
     // Choose all that apply
-    .helpText__1564e {
+    .helpText__80c19 {
         --text-muted: #{$black};
     }
 
@@ -60,13 +60,13 @@
         background: unset;
 
         // Option
-        .optionButtonWrapper__4072c {
+        .optionButtonWrapper_c86844 {
             @include box.sync;
 
-            &.selected__90dd8 {
+            &.selected__31118 {
                 @include box.highlight($background);
 
-                .checkIcon__5aa1f {
+                .checkIcon__3c055 {
                     background: $light;
 
                     path {
@@ -78,71 +78,71 @@
     }
 
     // Profile preview
-    .profileCard_bd55ee {
+    .profileCard__1d74b {
         @include box.sync;
     }
 
     // Search for channels
-    .container__7712a {
+    .container__33507 {
         @include box.sync;
     }
 
     // Channel group header
-    .categoryRow_df4323 {
+    .categoryRow__8a080 {
         --text-muted: #{$black};
 
-        .checkbox_c7f690 {
+        .checkbox_fcf2ad {
             background: $black !important;
             border: none;
         }
     }
 
     // Channel
-    .channelRow__96673 {
+    .channelRow__538ef {
         @include box.sync;
         border-top-width: 0;
         border-bottom-width: 0;
 
-        &.firstChannel__94f31 {
+        &.firstChannel_c06b53 {
             border-top-width: 4px;
         }
 
-        &.lastChannel__129f1 {
+        &.lastChannel__0a967 {
             border-bottom-width: 4px;
         }
     }
 
     // Separators
-    .separator__3cfd2 {
+    .separator__68570 {
         display: none;
     }
 }
 
 // Server shop
-.content_d4d412 {
+.content__3c252 {
     @include box.sync;
     margin: 16px;
     padding: 0;
     padding-right: 0 !important;
 
     // Box for some reason
-    .contentContainer_d0e511 {
+    .contentContainer_b281f2 {
         width: auto;
     }
 
     // Banner
-    .container__5a6b1 {
+    .container__0018d {
         background: unset;
         box-shadow: none;
         border: none;
 
-        .coverImageContainer_b56a3b {
+        .coverImageContainer__13e0a {
             width: unset;
         }
     }
 
     // Support options
-    .container_cdfd0b {
+    .container_bd4104 {
         padding: 16px;
 
         // Item
@@ -150,24 +150,24 @@
             @include box.default;
             box-shadow: none;
 
-            &.selected__70739 {
+            &.selected__26619 {
                 @include box.highlight;
                 box-shadow: none;
             }
 
-            .text-sm-semibold__41578,
-            .text-xs-normal__56c35 {
+            .text-sm-semibold_d260b0,
+            .text-xs-normal__46d75 {
                 color: $black !important;
             }
         }
     }
 
-    .tabContainer_d1d15f {
+    .tabContainer__64032 {
         border-top: 0;
     }
 
     // Perk card
-    .cardContainerWithoutTopIndicator_d7edfe {
+    .cardContainerWithoutTopIndicator_a60d34 {
         @include box.default;
 
         --header-primary: #{$black};
@@ -177,13 +177,13 @@
         --text-muted: #{$black};
         --text-normal: #{$black};
 
-        .tierInfoContainer__80b01,
-        .subscriptionPerks__2f4e5 {
+        .tierInfoContainer_dd1f1c,
+        .subscriptionPerks__47df3 {
             background: unset;
         }
 
         // Preview
-        .roleMessagePreview__8088a {
+        .roleMessagePreview__242dc {
             @include box.sync;
             --text-normal: #{$foreground};
         }

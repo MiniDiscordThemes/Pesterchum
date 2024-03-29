@@ -1,30 +1,30 @@
 @use "../top/vars" as *;
 
 // Servers list
-.wrapper_a7e7a8 {
+.wrapper__216eb {
     background: unset;
 
     // Home icon
-    .childWrapper__01b9c:has([d^="M19.73 4.87"]) {
+    .childWrapper_a6ce15:has([d^="M19.73 4.87"]) {
         background: url("https://minidiscordthemes.github.io/Pesterchum/img/home.avif") center/80% no-repeat $background;
         color: transparent;
     }
 
     // New and discover icons
-    .circleIconButton_d8df29 {
+    .circleIconButton__05cf2 {
         color: $light;
     }
 
     // Icon backgrounds
-    .childWrapper__01b9c,
-    .wrapper_d281dd:hover .childWrapper__01b9c,
-    .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c,
-    .circleIconButton_d8df29 {
+    .childWrapper_a6ce15,
+    .wrapper__8436d:hover .childWrapper_a6ce15,
+    .wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15,
+    .circleIconButton__05cf2 {
         background-color: $background;
     }
 
     // Folders
-    .expandedFolderBackground__1bec6,
+    .expandedFolderBackground_b1385f,
     .folder__17546 {
         background: $background;
     }

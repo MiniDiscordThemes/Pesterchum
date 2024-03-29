@@ -16,16 +16,16 @@
     background: $medium;
 }
 
-.content__4bf10 {
+.content__76dcf {
     border: $size-border solid $light;
 
-    .sidebar_ded4b5 + :is(div, main):not(.erd_scroll_detection_container),
-    .sidebar_ded4b5 + .erd_scroll_detection_container + :is(div, main):not(.erd_scroll_detection_container) {
+    .sidebar_e031be + :is(div, main):not(.erd_scroll_detection_container),
+    .sidebar_e031be + .erd_scroll_detection_container + :is(div, main):not(.erd_scroll_detection_container) {
         background: unset;
         border-left: $size-border solid $light;
 
-        .content__1a4fe,
-        .tabBody_b3d268 {
+        .content__01e65,
+        .tabBody_a90ea8 {
             padding: 16px;
             gap: 16px;
 

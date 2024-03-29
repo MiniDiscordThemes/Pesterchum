@@ -5,7 +5,7 @@
 @use "../../top/box";
 
 // Channels
-.sidebar_ded4b5 {
+.sidebar_e031be {
     background: unset;
     padding: 10px;
     gap: 10px;
@@ -22,8 +22,8 @@
     }
 
     // Actual channels and userarea
-    .container__590e2,
-    .privateChannels__93473,
+    .container__7e23c,
+    .privateChannels__9b518,
     .panels__58331 {
         @include box.highlight($background);
     }

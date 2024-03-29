@@ -2,13 +2,13 @@
 @use "../top/box";
 
 // Forum main panel
-.container_b181b6 {
+.container_b92032 {
     gap: 16px;
     background: unset;
 
     // Forum
     .list__5ced9,
-    .grid__36f14 {
+    .grid_c2bdfe {
         @include box.default;
 
         & > div:first-child {
@@ -17,7 +17,7 @@
         }
 
         // Post maker and posts
-        .mainCard__8a660 {
+        .mainCard__0ec2c {
             @include box.sync;
 
             // Opened post
@@ -26,26 +26,26 @@
             }
 
             // Pinned post
-            .pinIcon__39b6e {
+            .pinIcon__054d8 {
                 background: $dark;
             }
 
             // Gallery mode text
-            .contentPreview_b317ee {
+            .contentPreview__122fc {
                 background: unset;
                 border: none;
 
-                .textContentFooter__5a630 {
+                .textContentFooter_e03480 {
                     background: linear-gradient(to top, $background, transparent);
                 }
             }
         }
-        .container__99b06:hover {
+        .container_de2a56:hover {
             transform: none;
         }
 
         // Post maker results
-        .matchingPostsRow__510be {
+        .matchingPostsRow__6cdb0 {
             background: unset;
             --text-normal: #{$black};
 
@@ -57,25 +57,25 @@
         }
 
         // Post guidelines
-        .container__1b27a {
+        .container__852f7 {
             @include box.sync;
-            .descriptionContainer__3814d {
+            .descriptionContainer__24e5f {
                 background: unset;
             }
         }
 
         // Filter by tag
-        .tagsContainer_e0ece5 {
+        .tagsContainer__58760 {
             // Divider
-            .divider__0a999 {
+            .divider_d1051b {
                 width: $size-border;
                 background: $dark;
             }
 
             // Sort and view
             // See all tags
-            .sortDropdown_ec3016,
-            .tagsButton_e96762 {
+            .sortDropdown__40a16,
+            .tagsButton__34537 {
                 @include box.default;
                 --interactive-normal: #{$black};
 
@@ -83,14 +83,14 @@
                     border-color: $light;
                 }
             }
-            .tagsButton_e96762 {
+            .tagsButton__34537 {
                 padding: 0;
 
                 // Tag counter
-                .countContainer__1b48f {
+                .countContainer_a9a63f {
                     background: unset;
                 }
-                .countText__6ebee {
+                .countText__90ea0 {
                     color: $black;
                     font-size: 14px;
                     line-height: 18px;
@@ -105,11 +105,11 @@
     @include box.default;
     --text-normal: #{$black};
 
-    &.clickable__8b375:not(.disabled__70fda):hover {
+    &.clickable_daf171:not(.disabled_fbfabf):hover {
         background: $medium;
     }
 
-    &.selected_dc72d1.selected_dc72d1 {
+    &.selected__50db4.selected__50db4 {
         border-color: $light;
         background: $medium;
     }
@@ -117,33 +117,33 @@
 
 // Unset forum minimum width
 .grid-21dB-S > div:first-child,
-.headerRow__16d8e,
+.headerRow__86f2e,
 .list__5ced9 > div:first-child {
     min-width: unset;
     box-sizing: border-box;
 }
 
 // Forum post info
-.scrollerInner__059a5 {
+.scrollerInner__37fee {
     overflow: unset;
-    .container__8ee50 {
+    .container__68e43 {
         background: unset;
         pointer-events: none;
         border-top: 0;
         top: 0;
 
-        .reactButtons__261af,
-        .buttons__1995d {
+        .reactButtons_db41f7,
+        .buttons_ef8915 {
             pointer-events: all;
         }
     }
-    .divider_ffec75 {
+    .divider__4df9f {
         display: none;
     }
 
     // Post action buttons
-    .addReactButton__59750,
-    .buttonInner__2771e {
+    .addReactButton__4342f,
+    .buttonInner__865de {
         @include box.default;
         color: $black;
 
@@ -152,22 +152,22 @@
         }
 
         &:hover,
-        &:active .icon_b0b9a4,
-        &.active_f2e487 .icon_b0b9a4,
-        &:hover .icon_b0b9a4 {
+        &:active .icon__09a44,
+        &.active_f2e487 .icon__09a44,
+        &:hover .icon__09a44 {
             color: $black;
         }
     }
 
     // Reaction
-    .reaction_b90ab0 {
+    .reaction_ef7e09 {
         @include box.default;
 
-        &.reactionMe_bf6909 {
+        &.reactionMe__9fc5c {
             @include box.highlight;
         }
 
-        .reactionCount__60448 {
+        .reactionCount_b780c8 {
             color: $black;
         }
     }

@@ -2,23 +2,23 @@
 @use "../../top/box";
 
 // Server channels list
-.container__590e2 {
+.container__7e23c {
     $banner-height: calc((var(--chum-sidebar-width) - (2 * 10px) - (2 * 0.5vh)) / 240 * 135);
 
     // Banner
-    .animatedContainer__341f6 {
+    .animatedContainer__0e828 {
         height: $banner-height;
     }
     // Prevent banner overlapping outer
-    .animatedContainer__341f6,
-    .bannerImage__39c51 {
+    .animatedContainer__0e828,
+    .bannerImage_c73a57 {
         transform: none !important;
     }
-    .bannerImage__39c51,
-    .bannerImg_c85b7f {
+    .bannerImage_c73a57,
+    .bannerImg_fe5c1b {
         width: inherit;
     }
-    .bannerImg_c85b7f {
+    .bannerImg_fe5c1b {
         height: unset;
     }
     div[style="height: 12px;"] {
@@ -26,8 +26,8 @@
     }
 
     // Voice users collapsed
-    .overlap_c76e16 .avatar_a56eee,
-    .moreContainer_a9d4ad {
+    .overlap__6969e .avatar_a56eee,
+    .moreContainer_dd4188 {
         @include box.black;
         border-radius: $size-max;
     }
@@ -39,7 +39,7 @@
     }
 
     // Voice user limit
-    .wrapper__5848b {
+    .wrapper__71278 {
         .users__65981,
         .total_c01838 {
             background: unset;
@@ -51,7 +51,7 @@
     }
 
     // Show all voice channels
-    .voiceChannelsButton__46c37:hover {
+    .voiceChannelsButton_fd0b98:hover {
         background: unset;
     }
 }

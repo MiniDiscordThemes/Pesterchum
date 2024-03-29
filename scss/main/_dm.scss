@@ -5,32 +5,32 @@
 // DMs
 
 // DM list
-.privateChannels__93473 {
-    .scroller__4b984 {
+.privateChannels__9b518 {
+    .scroller__89969 {
         background: unset;
 
         // Primary channels
-        .channel_c21703 {
+        .channel__0aef5 {
             max-width: unset;
 
             // Friends channel
-            &:has(path[d^="M3 5v-.75"]) .name__02dbd {
+            &:has(path[d^="M3 5v-.75"]) .name_f842e4 {
                 @include replace.text("Chums", 16px);
                 height: 20px;
             }
         }
 
         // DM header
-        .headerText__051c0 {
+        .headerText__88997 {
             @include replace.text("Chumroll", 12px);
         }
     }
 }
 
 // Friends header (for other headers see _header.scss)
-.container__11d72 {
+.container__26baa {
     // Friends title
-    &:has(path[d^="M3 5v-.75"]) .title__9e2b0 {
+    &:has(path[d^="M3 5v-.75"]) .title__84e16 {
         @include replace.text("Chums", 16px);
     }
 
@@ -39,9 +39,9 @@
         @include box.highlight;
         color: $black;
 
-        &.themed_b957e8:hover:not(.disabled__85bca),
-        &.themed_b957e8.selected__5711d.item__48dda,
-        &.addFriend__80542.addFriend__80542 {
+        &.themed_b957e8:hover:not(.disabled__2717e),
+        &.themed_b957e8.selected_a523ff.item__48dda,
+        &.addFriend__4c0a2.addFriend__4c0a2 {
             background-color: $light;
             color: $black;
         }
@@ -53,49 +53,49 @@
     }
 
     // Add friend button
-    .addFriend__80542 span {
+    .addFriend__4c0a2 span {
         @include replace.text("Add Chum", 16px);
         height: 20px;
     }
 
-    .akaBadge__7df41 {
+    .akaBadge__27cd4 {
         background: $black;
         color: $white;
     }
 }
 
 // DM call container
-.wrapper_bd2abe.minimum_ebf000 {
+.wrapper__6bf2d.minimum__7f356 {
     background: unset;
 
-    .quickSelectLabel_cf5c1b,
-    .quickSelect_ae48d2,
-    .controlIcon__25700.themeable__8c5dc {
+    .quickSelectLabel__79774,
+    .quickSelect__540d0,
+    .controlIcon__73723.themeable__096da {
         color: $black;
     }
 
     // Square buttons
-    .controlButton_ab2899 {
+    .controlButton__863c7 {
         @include box.default;
-        .colorable_c84c4c.primaryDark__6b700,
-        .colorable_c84c4c.primaryLight__19ab7 {
+        .colorable__4f530.primaryDark_ec74a7,
+        .colorable__4f530.primaryLight_be4e00 {
             background: unset;
         }
     }
 }
 
 // People
-.peopleColumn__51df3 {
+.peopleColumn__0c784 {
     @include box.sync;
 
     // Sad wumpus: Wumpus is waiting on friends. You don't have to, though!
-    .image__98a59[style*="bca918618b884a382ab5.svg"] + .flexChild__6e093 .text__1c14c {
+    .image__08515[style*="bca918618b884a382ab5.svg"] + .flexChild__3da10 .text__0e310 {
         @include replace.text("Wumpus has no chums.", 16px);
     }
 
     // All tab
     &#all-tab {
-        .title_dc625c {
+        .title_c42cad {
             position: relative;
             overflow: visible;
             margin-inline-start: calc(30px - 1.2em);
@@ -111,7 +111,7 @@
 
     // Blocked tab
     &#blocked-tab {
-        .title_dc625c {
+        .title_c42cad {
             position: relative;
             overflow: visible;
             margin-inline-start: calc(30px + 1.2em);
@@ -128,44 +128,44 @@
     // Add friend tab
     &#add_friend-tab {
         // Title: Add friend
-        .title_c627bb {
+        .title_e7b8ee {
             @include replace.text("Add Chum", 16px);
         }
 
         // Subtitle: You can add friends with their Discord usernames.
-        .description__7af71:first-child {
+        .description_b0e07c:first-child {
             @include replace.text("You can add chums with their chumhandles.", 14px);
         }
 
         // Input: You can add friends with their Discord usernames.
-        .input_d266e7::placeholder {
+        .input_f27786::placeholder {
             color: transparent;
         }
 
         // Button: Send Friend Request
-        .button_afdfd9 {
+        .button__581d0 {
             @include box.default;
 
-            .contents_fb6220 {
+            .contents__322f4 {
                 @include replace.text("Send chum request");
             }
         }
 
         // Title: Other places to make friends
-        .title_bd1ead {
+        .title__03415 {
             @include replace.text("Other places to make chums", 16px);
         }
     }
 }
 
 // Active now
-.nowPlayingColumn_f5023f {
+.nowPlayingColumn_b025fe {
     @include box.sync;
 
-    .container__0a6a9 {
+    .container__3673d {
         background: unset;
 
-        .scroller__00e7e {
+        .scroller__7c25e {
             border-left: 0;
             margin-left: 0;
         }
@@ -173,33 +173,33 @@
 }
 
 // User profile panel
-.profilePanel__12596 {
+.profilePanel_e2cafe {
     @include box.sync;
 
-    .userProfileOuterUnthemed__48723,
-    .userPanelInnerThemed__1804b {
+    .userProfileOuterUnthemed_e14365,
+    .userPanelInnerThemed_c2aed9 {
         background: unset;
     }
 }
 
 // Library, Nitro, Shop
-:is(.scroller__311cd, .scroller_a1aadd) {
+:is(.scroller_a9a4b4, .scroller__49aa3) {
     @include box.sync;
     margin: 16px;
 
     // Library header
-    .header_b5ab54 {
+    .header__119bc {
         background: unset;
     }
 }
 
 // Shop
-.shopScrollBackgroundPrimary_bb1f42 {
+.shopScrollBackgroundPrimary__28f1d {
     @include box.sync;
     margin: 16px;
     height: calc(100% - 80px);
 
-    .pageWrapperBackgroundPrimary__74f14 {
+    .pageWrapperBackgroundPrimary__36469 {
         background: unset;
     }
 }
