@@ -1,8 +1,8 @@
 @use "../top/vars" as *;
 
 // Thread split view
-.chatTarget__0ea5e,
-.container_def45c {
+.chatTarget_f14a03,
+.container__694a1 {
     background: $medium;
 }
 
@@ -16,13 +16,13 @@
 }
 
 // Floating thread view
-.floating_f021e2 {
+.floating__8f631 {
     filter: none;
     border-left: $size-border solid $light;
 }
 
 // Resize thread handle
-.resizeHandle_f1a098 {
+.resizeHandle_cc9d34 {
     width: $size-border * 1.5;
     background: $light;
 }

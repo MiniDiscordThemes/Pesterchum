@@ -3,8 +3,8 @@
 
 .panels__58331 {
     .panel_bd8c76,
-    .container_d667ff,
-    .container_ca50b9 {
+    .container_e1958d,
+    .container_debb33 {
         background: unset;
     }
 
@@ -14,12 +14,12 @@
     }
 
     // Voice controls
-    .container_d667ff {
+    .container_e1958d {
         border-bottom: 0;
 
         // Activity buttons
-        .actionButtons_b58cbb {
-            .button__66e8c:not(.disabledButtonWrapper__69c70) {
+        .actionButtons__85e3c {
+            .button_b82d53:not(.disabledButtonWrapper_b04230) {
                 @include box.default;
                 height: 36px;
                 color: $background;
@@ -27,10 +27,10 @@
             }
 
             // Disabled button
-            .disabledButtonWrapper__69c70 {
+            .disabledButtonWrapper_b04230 {
                 height: 36px;
 
-                .contents_fb6220 {
+                .contents__322f4 {
                     display: flex;
                     align-items: center;
                 }
@@ -39,10 +39,10 @@
     }
 
     // User controls
-    .container_ca50b9 {
+    .container_debb33 {
         margin-bottom: 0;
 
-        .avatarWrapper_ba5175 {
+        .avatarWrapper__500a6 {
             margin: 0;
             padding-left: 0;
         }

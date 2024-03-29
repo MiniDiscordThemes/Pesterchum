@@ -3,16 +3,16 @@
 @use "../top/sticky";
 
 // Any layer
-.layer__2efaa {
+.layer_f7d46a {
     opacity: 1 !important;
 
     // Settings layer
-    + .layer__2efaa {
+    + .layer_f7d46a {
         background: unset;
         backdrop-filter: blur(2px) brightness(0.7);
         align-items: center;
 
-        div:has(> .standardSidebarView__1129a) {
+        div:has(> .standardSidebarView__12528) {
             display: flex;
             justify-content: center;
             width: 100%;
@@ -21,7 +21,7 @@
 }
 
 // Settings modal
-.standardSidebarView__1129a {
+.standardSidebarView__12528 {
     @include box.highlight;
     padding: 10px;
     left: unset;
@@ -33,13 +33,13 @@
         top: 22px + 20px;
     }
 
-    .sidebarRegion__60457 {
+    .sidebarRegion__36437 {
         flex: 0 0 var(--custom-standard-sidebar-view-sidebar-total-width);
     }
-    .sidebarRegionScroller__1fa7e {
+    .sidebarRegionScroller__8113e {
         background: $medium;
     }
-    .sidebar__9e3e2 {
+    .sidebar__02e8d {
         padding: 0 6px 0 0;
 
         // Item
@@ -47,8 +47,8 @@
             @include sticky.box;
             padding: 0;
 
-            &.selected__5711d::before,
-            &.selected__5711d::after {
+            &.selected_a523ff::before,
+            &.selected_a523ff::after {
                 background: $light;
             }
 
@@ -61,19 +61,19 @@
         }
 
         // Separator
-        .separator_fdbcfd {
+        .separator_d14fb1 {
             background: unset;
         }
 
         // Group header
-        .header_f72511,
+        .header__71a82,
         // Socials
-        .link_b006df {
+        .link_cebd7b {
             color: $black;
         }
 
         // Group header category
-        .headerText__94c22 {
+        .headerText_e86b38 {
             display: flex;
 
             .category-CysNYv {
@@ -87,12 +87,12 @@
         }
 
         // Version info
-        .info__755e1 .line__75801 {
+        .info__755e1 .line_cdcacc {
             color: $black !important;
         }
     }
 
-    .contentRegionScroller__86c79 {
+    .contentRegionScroller__9ae20 {
         @include box.sync;
     }
 }
