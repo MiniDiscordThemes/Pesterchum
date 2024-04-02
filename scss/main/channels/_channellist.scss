@@ -1,30 +1,14 @@
 @use "../../top/vars" as *;
 @use "../../top/box";
 
+// Adjust channel list width
+@import url("https://minidiscordthemes.github.io/Snippets/ChannelListWidth/main.css");
+:root {
+    --channellist-width: var(--chum-sidebar-width);
+}
+
 // Server channels list
-.container__7e23c {
-    $banner-height: calc((var(--chum-sidebar-width) - (2 * 10px) - (2 * 0.5vh)) / 240 * 135);
-
-    // Banner
-    .animatedContainer__0e828 {
-        height: $banner-height;
-    }
-    // Prevent banner overlapping outer
-    .animatedContainer__0e828,
-    .bannerImage_c73a57 {
-        transform: none !important;
-    }
-    .bannerImage_c73a57,
-    .bannerImg_fe5c1b {
-        width: inherit;
-    }
-    .bannerImg_fe5c1b {
-        height: unset;
-    }
-    div[style="height: 12px;"] {
-        height: calc($banner-height - 48px - 84px) !important;
-    }
-
+.sidebar_e031be {
     // Voice users collapsed
     .overlap__6969e .avatar_a56eee,
     .moreContainer_dd4188 {
