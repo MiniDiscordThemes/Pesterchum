@@ -25,15 +25,6 @@
 [license]:          https://github.com/MiniDiscordThemes/Pesterchum/blob/main/LICENSE
 [.theme.css]:       https://github.com/MiniDiscordThemes/Pesterchum/blob/main/Pesterchum.theme.css
 
-[pc]:               https://github.com/luminaryFlowers/Pesterchum-Discord-Theme
-[pc-author1]:       https://github.com/winterClover
-[pc-author2]:       https://github.com/luminaryFlowers
-[pc-license]:       none
-
-[squared]:          https://github.com/MiniDiscordThemes/Squared
-[squared-author]:   https://github.com/Saltssaumure
-[squared-license]:  https://github.com/MiniDiscordThemes/Squared/blob/main/LICENSE
-
 [release-bd]:       https://betterdiscord.app/theme/?id=000 "BetterDiscord store page"
 [release-rp]:       https://replugged.dev/store/net.saltssaumure.Pesterchum "Replugged store page"
 [release-bd-gh]:    https://github.com/MiniDiscordThemes/Pesterchum/releases/latest/download/Pesterchum.theme.css "Get latest release"
@@ -115,11 +106,17 @@
 3. Edit the variable values.
 
 ## License
-Unlicensed
+See [LICENSE.md][license] for details.
 
-### Includes
-- [Pesterchum][pc] by [winterClover][pc-author2] and [luminaryFlowers][pc-author1] - [unlicensed][pc-license]
-- [Squared][squared] by [Saltssaumure][squared-author] - [MIT License][squared-license]
+## Credits
+
+### Sources
+[pestercord]:               https://github.com/luminaryFlowers/Pesterchum-Discord-Theme
+- [Pestercord][pestercord] by [luminaryFlowers](https://github.com/luminaryFlowers) and [winterClover](https://github.com/winterClover)
+
+### Themes
+[squared]:          https://github.com/MiniDiscordThemes/Squared
+- [Squared][squared] by [MiniDiscordThemes](https://github.com/MiniDiscordThemes) ([Saltssaumure](https://github.com/Saltssaumure)) - MIT license
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.

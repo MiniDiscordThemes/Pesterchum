@@ -22,7 +22,7 @@
     "type": "store",
     "id": "net.saltssaumure.Pesterchum"
   },
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE IN LICENSE.md",
   "type": "replugged-theme",
   "main": "scss/chum.scss",
   "source": "https://github.com/MiniDiscordThemes/Pesterchum",
