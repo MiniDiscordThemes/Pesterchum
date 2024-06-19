@@ -1,7 +1,7 @@
 @use "../top/vars" as *;
 
 // Header bar
-.container__26baa:is(.title_d4ba1a, .themed_b152d4) {
+.container_e44302:is(.title_a7d72e, .themed_e44302) {
     background: unset;
 
     // No shadow
@@ -9,33 +9,33 @@
         display: none;
     }
 
-    .children_cde9af::after {
+    .children_e44302::after {
         background: linear-gradient(90deg, transparent, var(--message-background-alt));
     }
 
-    .title__84e16,
-    .topic__16ae3,
+    .title_e44302,
+    .topic_bf3bbb,
     .nicknames__12efb {
         color: $black;
     }
 
-    .divider_bdb894 {
+    .divider_e44302 {
         display: none;
     }
 
-    .searchBar__5a20a,
-    .searchBar__9eefb {
+    .searchBar_a46bef,
+    .searchBar_e0264e {
         background: $background;
     }
 
     // Channel icon
-    .icon_ae0b42,
-    .clickable_ce0925 .icon_ae0b42,
-    .clickable_ce0925:hover .icon_ae0b42,
-    .selected__1fc53 .icon_ae0b42 {
+    .icon_e44302,
+    .clickable_e44302 .icon_e44302,
+    .clickable_e44302:hover .icon_e44302,
+    .selected_e44302 .icon_e44302 {
         color: $black;
     }
-    .iconWrapper_de6cd1 path {
+    .iconWrapper_e44302 path {
         fill: $black;
     }
 }

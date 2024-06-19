@@ -3,16 +3,16 @@
 @use "../top/sticky";
 
 // Any layer
-.layer_f7d46a {
+.layer_d4b6c5 {
     opacity: 1 !important;
 
     // Settings layer
-    + .layer_f7d46a {
+    + .layer_d4b6c5 {
         background: unset;
         backdrop-filter: blur(2px) brightness(0.7);
         align-items: center;
 
-        div:has(> .standardSidebarView__12528) {
+        div:has(> .standardSidebarView_c25c6d) {
             display: flex;
             justify-content: center;
             width: 100%;
@@ -21,7 +21,7 @@
 }
 
 // Settings modal
-.standardSidebarView__12528 {
+.standardSidebarView_c25c6d {
     @include box.highlight;
     padding: 10px;
     left: unset;
@@ -33,22 +33,22 @@
         top: 22px + 20px;
     }
 
-    .sidebarRegion__36437 {
+    .sidebarRegion_c25c6d {
         flex: 0 0 var(--custom-standard-sidebar-view-sidebar-total-width);
     }
-    .sidebarRegionScroller__8113e {
+    .sidebarRegionScroller_c25c6d {
         background: $medium;
     }
-    .sidebar__02e8d {
+    .sidebar_c25c6d {
         padding: 0 6px 0 0;
 
         // Item
-        :is(.item__48dda.item__48dda.item__48dda, .item__48dda.item__48dda.item__48dda:hover) {
+        :is(.item_a0.item_a0.item_a0, .item_a0.item_a0.item_a0:hover) {
             @include sticky.box;
             padding: 0;
 
-            &.selected_a523ff::before,
-            &.selected_a523ff::after {
+            &.selected_a0::before,
+            &.selected_a0::after {
                 background: $light;
             }
 
@@ -61,19 +61,19 @@
         }
 
         // Separator
-        .separator_d14fb1 {
+        .separator_a0 {
             background: unset;
         }
 
         // Group header
-        .header__71a82,
+        .header_a0,
         // Socials
-        .link_cebd7b {
+        .link_c44e94 {
             color: $black;
         }
 
         // Group header category
-        .headerText_e86b38 {
+        .headerText_a0 {
             display: flex;
 
             .category-CysNYv {
@@ -87,12 +87,12 @@
         }
 
         // Version info
-        .info__755e1 .line_cdcacc {
+        .info_c5a741 .line_c5a741 {
             color: $black !important;
         }
     }
 
-    .contentRegionScroller__9ae20 {
+    .contentRegionScroller_c25c6d {
         @include box.sync;
     }
 }

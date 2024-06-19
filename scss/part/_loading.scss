@@ -1,16 +1,16 @@
 @use "../top/vars" as *;
 
 // Loading messages
-.wrapper_c899da {
+.wrapper_cdfd51 {
     background: unset;
 
     // Message
-    .wrapper__6b7d8 {
+    .wrapper_b211c6 {
         background: unset;
 
-        .attachment_d24cc3,
-        .avatar_eb6eba,
-        .blob__8d5bd {
+        .attachment_b211c6,
+        .avatar_b211c6,
+        .blob_b211c6 {
             background: $dark;
             opacity: 0.2 !important;
         }
@@ -18,7 +18,7 @@
 }
 
 // Loading forum posts
-.loadingCard_ecb256 {
+.loadingCard_a6d69a {
     background: $dark;
     opacity: 0.2 !important;
 }

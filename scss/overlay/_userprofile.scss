@@ -3,14 +3,14 @@
 @use "../top/replace";
 
 // User profile
-.userProfileOuter__35e59 {
+.userProfileOuter_c69a7b {
     @include box.default;
 
     // Background
-    .userProfileInner__8ff35 {
+    .userProfileInner_c69a7b {
         background: $medium;
     }
-    .overlayBackground__345c9 {
+    .overlayBackground_c69a7b {
         background: unset;
     }
 
@@ -20,13 +20,13 @@
     }
 
     // Icon
-    .avatar__991e2 {
+    .avatar_c51b4e {
         background: $dark;
     }
 
     // Badges
-    .profileBadges__1f2ab,
-    .badgeList__126b0 {
+    .profileBadges_f89da9,
+    .badgeList_ec3b75 {
         @include box.sync;
         padding: 0;
 
@@ -36,37 +36,37 @@
     }
 
     // Friend request button
-    .relationshipButtons_b880ad {
-        .actionButton__46a10 {
+    .relationshipButtons_ec3b75 {
+        .actionButton_fe3e88 {
             @include box.highlight;
             height: 35px;
             color: $black;
 
             // Send friend request
             // Send message
-            .contents__322f4 {
+            .contents_dd4f85 {
                 @include replace.text("Pester");
             }
 
             // Friend request sent
-            &:disabled .contents__322f4 {
+            &:disabled .contents_dd4f85 {
                 @include replace.text("Chum request sent");
             }
         }
 
         // More options
-        .additionalActionsIcon__6b109,
-        .additionalActionsIcon__6b109:hover {
+        .additionalActionsIcon_ec3b75,
+        .additionalActionsIcon_ec3b75:hover {
             color: $black;
         }
     }
 
     // Name
-    .userTagUsernameBase__2bd24,
-    .discriminator__9d9f2 {
+    .userTagUsernameBase_c9ccf6,
+    .discriminator_afed89 {
         color: $black;
     }
-    .discrimBase__5555e {
+    .discrimBase_c9ccf6 {
         color: $grey;
     }
 
@@ -77,19 +77,19 @@
     }
 
     // Tabs
-    .tabBarContainer_b283be {
+    .tabBarContainer_b9fccc {
         border-bottom: 0;
 
-        .tabBar__35f81 {
+        .tabBar_b9fccc {
             gap: 10px;
 
-            .item__48dda {
+            .item_a0 {
                 @include box.highlight;
                 color: $black;
                 padding: 8px;
                 box-sizing: border-box;
 
-                &.selected_a523ff,
+                &.selected_a0,
                 &:hover {
                     border-bottom-color: $dark;
                 }
@@ -113,7 +113,7 @@
     }
 
     // Section title
-    .title__392bc {
+    .title_c4a579 {
         color: $grey;
     }
 
@@ -126,65 +126,65 @@
 
     // Activity
     .activity__20c1e {
-        .headerText_c0138d {
+        .headerText_d5089b {
             color: $grey;
         }
-        .activityName_a7b7de,
-        .content__7246b,
-        .details_e26997,
-        .name__0ac4b,
-        .nameNormal_cb5c2b,
-        .nameWrap_b61c4b {
+        .activityName_d5089b,
+        .content_d5089b,
+        .details_d5089b,
+        .name_d5089b,
+        .nameNormal_d5089b,
+        .nameWrap_d5089b {
             color: $black;
         }
     }
 
     // Roles
-    .role_d81130 {
+    .role_f9575e {
         @include box.sync;
         box-sizing: content-box;
         padding: 0;
-        .roleNameOverflow__27401 {
+        .roleNameOverflow_e4010c {
             color: $foreground;
         }
     }
 
     // Note
-    .note_ba0c31,
-    .note_ba0c31 {
+    .note_c90ad7,
+    .note_c90ad7 {
         @include box.sync;
-        .textarea__0461c {
+        .textarea_dde0a8 {
             color: $foreground;
         }
     }
 
     // Message
-    .messageInputContainer_a93946 {
+    .messageInputContainer_f2c0a8 {
         @include box.sync;
-        .messageInput_c423ff {
+        .messageInput_f2c0a8 {
             color: $foreground;
         }
     }
 
     // Connected accounts
-    .connectedAccountContainer__5972d {
+    .connectedAccountContainer_f3eb60 {
         @include box.sync;
     }
 
     // Server or friend
-    .listRow__50619 {
-        .listName__028b9,
-        .guildNick_d76c11 {
+    .listRow_e4be58 {
+        .listName_e4be58,
+        .guildNick_b26403 {
             color: $grey;
         }
     }
 }
 
 // Themed
-.userProfileOuterThemed_a425f3.userPopoutOuter_d67f56,
-.userProfileOuterThemed_a425f3.userProfileOuter__35e59 {
+.userProfileOuterThemed_c69a7b.userPopoutOuter_c69a7b,
+.userProfileOuterThemed_c69a7b.userProfileOuter_c69a7b {
     padding: 0;
 }
-.userProfileInner__8ff35::before {
+.userProfileInner_c69a7b::before {
     display: none;
 }

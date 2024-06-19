@@ -3,25 +3,25 @@
 @use "../top/sticky";
 
 // Search results
-.searchResultsWrap__2e184 {
+.searchResultsWrap_c2b47d {
     @include box.highlight;
 
     // Header
-    .searchHeader__4d70e {
+    .searchHeader_b7c924 {
         background: $medium;
         --header-primary: #{$black};
     }
 
     // Results
-    .scroller__5f036 {
+    .scroller_c2b47d {
         padding: 0 10px;
         padding-right: 10px - $size-border !important;
     }
 
     // Channel
-    .searchResultGroup_ea38ca {
+    .searchResultGroup_a9e225 {
         // Name
-        .channelNameContainer__2d85c {
+        .channelNameContainer_a9e225 {
             // Channel name
             --header-primary: #{$black};
             // Parent channel name
@@ -29,24 +29,24 @@
         }
 
         // Content
-        .searchResult__00093 {
+        .searchResult_ddc613 {
             @include box.sync;
             @include sticky.box($BOTTOM: 54px);
         }
 
         // Jump button
-        .buttonsContainer__22558 {
+        .buttonsContainer_ddc613 {
             display: none;
         }
     }
-    &:not(:has(.pageControlContainer__86479)) {
-        .searchResult__00093::after {
+    &:not(:has(.pageControlContainer_b48941)) {
+        .searchResult_ddc613::after {
             bottom: 20px;
         }
     }
 
     // Navigation
-    .container__6a77d {
+    .container_de9d09 {
         position: sticky;
         bottom: 0;
         background: $medium;
@@ -58,10 +58,10 @@
         --interactive-hover: #{$black};
 
         // Buttons
-        .pageButton_bf9853 {
+        .pageButton_b48941 {
             @include box.default;
 
-            &.activeButton__70b70 {
+            &.activeButton_b48941 {
                 border-color: $light;
                 color: $black;
             }

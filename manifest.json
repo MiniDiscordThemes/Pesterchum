@@ -17,18 +17,18 @@
       "github": "winterClover"
     }
   ],
-  "version": "1.6.2",
+  "version": "1.7.0",
   "updater": {
     "type": "store",
     "id": "net.saltssaumure.Pesterchum"
   },
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE IN LICENSE.md",
   "type": "replugged-theme",
   "main": "scss/chum.scss",
   "source": "https://github.com/MiniDiscordThemes/Pesterchum",
   "image": [
-    "https://i.imgur.com/y84rg1f.png",
-    "https://i.imgur.com/lolHUD9.png",
-    "https://i.imgur.com/1gqGyQI.png"
+    "https://minidiscordthemes.github.io/Pesterchum/preview/chum.png",
+    "https://minidiscordthemes.github.io/Pesterchum/preview/dark.png",
+    "https://minidiscordthemes.github.io/Pesterchum/preview/light.png"
   ]
 }
