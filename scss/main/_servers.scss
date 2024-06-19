@@ -1,7 +1,7 @@
 @use "../top/vars" as *;
 
 // Servers list
-.wrapper__216eb {
+.wrapper_fea3ef {
     background: unset;
 
     // Home icon
@@ -11,7 +11,7 @@
     }
 
     // New and discover icons
-    .circleIconButton__05cf2 {
+    .circleIconButton_db6521 {
         color: $light;
     }
 
@@ -19,13 +19,13 @@
     .childWrapper_a6ce15,
     .wrapper__8436d:hover .childWrapper_a6ce15,
     .wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15,
-    .circleIconButton__05cf2 {
+    .circleIconButton_db6521 {
         background-color: $background;
     }
 
     // Folders
-    .expandedFolderBackground_b1385f,
-    .folder__17546 {
+    .expandedFolderBackground_bc7085,
+    .folder_bc7085 {
         background: $background;
     }
 }

@@ -2,35 +2,35 @@
 @use "../top/box";
 
 // Server guide
-.scrollerBase__65223:has(.homeContainer_c36871) {
+.scrollerBase_c49869:has(.homeContainer_e85cee) {
     @include box.default;
     margin: 16px;
 
-    .row__4f559,
-    .sidebarCardWrapper__98124 {
+    .row_b53f4f,
+    .sidebarCardWrapper_e85cee {
         @include box.sync;
     }
 }
 
 // Channels and roles
-.header__71942:has(path[d^="M18.5 23"]) + .container__03ec9.container__03ec9.container__03ec9 {
+.header_f1fd9c:has(path[d^="M18.5 23"]) + .container_f1fd9c.container_f1fd9c.container_f1fd9c {
     @include box.default;
     margin: 16px;
     padding: 0;
     gap: 0;
 
     // Background
-    .emptyPage_feb902,
-    .scrollerContainer_dda72c,
-    .container__6b2e5 {
+    .emptyPage_c6b11b,
+    .scrollerContainer_c6b11b,
+    .container_c2efea {
         background: unset;
     }
 
     // Tabs
-    .tabBar_d4764b {
+    .tabBar_f1fd9c {
         border-bottom: 0;
 
-        .tabBarItem__60c37 {
+        .tabBarItem_f1fd9c {
             padding: 2px 8px;
         }
 
@@ -50,23 +50,23 @@
     }
 
     // Choose all that apply
-    .helpText__80c19 {
+    .helpText_c6b11b {
         --text-muted: #{$black};
     }
 
     // Customisation question group
-    .prompt__1b100 {
+    .prompt_c6b11b {
         border: none;
         background: unset;
 
         // Option
-        .optionButtonWrapper_c86844 {
+        .optionButtonWrapper_bd5e1f {
             @include box.sync;
 
-            &.selected__31118 {
+            &.selected_bd5e1f {
                 @include box.highlight($background);
 
-                .checkIcon__3c055 {
+                .checkIcon_bd5e1f {
                     background: $light;
 
                     path {
@@ -78,7 +78,7 @@
     }
 
     // Profile preview
-    .profileCard__1d74b {
+    .profileCard_c6b11b {
         @include box.sync;
     }
 
@@ -88,69 +88,69 @@
     }
 
     // Channel group header
-    .categoryRow__8a080 {
+    .categoryRow_f04d06 {
         --text-muted: #{$black};
 
-        .checkbox_fcf2ad {
+        .checkbox_f6cde8 {
             background: $black !important;
             border: none;
         }
     }
 
     // Channel
-    .channelRow__538ef {
+    .channelRow_f04d06 {
         @include box.sync;
         border-top-width: 0;
         border-bottom-width: 0;
 
-        &.firstChannel_c06b53 {
+        &.firstChannel_f04d06 {
             border-top-width: 4px;
         }
 
-        &.lastChannel__0a967 {
+        &.lastChannel_f04d06 {
             border-bottom-width: 4px;
         }
     }
 
     // Separators
-    .separator__68570 {
+    .separator_f04d06 {
         display: none;
     }
 }
 
 // Server shop
-.content__3c252 {
+.content_cac32e {
     @include box.sync;
     margin: 16px;
     padding: 0;
     padding-right: 0 !important;
 
     // Box for some reason
-    .contentContainer_b281f2 {
+    .contentContainer_cac32e {
         width: auto;
     }
 
     // Banner
-    .container__0018d {
+    .container_e1e1a4 {
         background: unset;
         box-shadow: none;
         border: none;
 
-        .coverImageContainer__13e0a {
+        .coverImageContainer_e1e1a4 {
             width: unset;
         }
     }
 
     // Support options
-    .container_bd4104 {
+    .container_ff1414 {
         padding: 16px;
 
         // Item
-        .tab_cc2f20 {
+        .tab_ff1414 {
             @include box.default;
             box-shadow: none;
 
-            &.selected__26619 {
+            &.selected_ff1414 {
                 @include box.highlight;
                 box-shadow: none;
             }
@@ -162,12 +162,12 @@
         }
     }
 
-    .tabContainer__64032 {
+    .tabContainer_cac32e {
         border-top: 0;
     }
 
     // Perk card
-    .cardContainerWithoutTopIndicator_a60d34 {
+    .cardContainerWithoutTopIndicator_ecba8f {
         @include box.default;
 
         --header-primary: #{$black};
@@ -177,13 +177,13 @@
         --text-muted: #{$black};
         --text-normal: #{$black};
 
-        .tierInfoContainer_dd1f1c,
-        .subscriptionPerks__47df3 {
+        .tierInfoContainer_ecba8f,
+        .subscriptionPerks_ecba8f {
             background: unset;
         }
 
         // Preview
-        .roleMessagePreview__242dc {
+        .roleMessagePreview_ecba8f {
             @include box.sync;
             --text-normal: #{$foreground};
         }

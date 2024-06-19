@@ -2,13 +2,13 @@
 @use "../top/box";
 
 // Forum main panel
-.container_b92032 {
+.container_a6d69a {
     gap: 16px;
     background: unset;
 
     // Forum
-    .list__5ced9,
-    .grid_c2bdfe {
+    .list_a6d69a,
+    .grid_a6d69a {
         @include box.default;
 
         & > div:first-child {
@@ -17,35 +17,35 @@
         }
 
         // Post maker and posts
-        .mainCard__0ec2c {
+        .mainCard_a6d69a {
             @include box.sync;
 
             // Opened post
-            &.isOpen_d88bb6 {
+            &.isOpen_a57509 {
                 border-color: $light;
             }
 
             // Pinned post
-            .pinIcon__054d8 {
+            .pinIcon_f451cd {
                 background: $dark;
             }
 
             // Gallery mode text
-            .contentPreview__122fc {
+            .contentPreview_a57509 {
                 background: unset;
                 border: none;
 
-                .textContentFooter_e03480 {
+                .textContentFooter_a57509 {
                     background: linear-gradient(to top, $background, transparent);
                 }
             }
         }
-        .container_de2a56:hover {
+        .container_d331f1:hover {
             transform: none;
         }
 
         // Post maker results
-        .matchingPostsRow__6cdb0 {
+        .matchingPostsRow_a6d69a {
             background: unset;
             --text-normal: #{$black};
 
@@ -57,25 +57,25 @@
         }
 
         // Post guidelines
-        .container__852f7 {
+        .container_ddbb27 {
             @include box.sync;
-            .descriptionContainer__24e5f {
+            .descriptionContainer_ddbb27 {
                 background: unset;
             }
         }
 
         // Filter by tag
-        .tagsContainer__58760 {
+        .tagsContainer_a6d69a {
             // Divider
-            .divider_d1051b {
+            .divider_a6d69a {
                 width: $size-border;
                 background: $dark;
             }
 
             // Sort and view
             // See all tags
-            .sortDropdown__40a16,
-            .tagsButton__34537 {
+            .sortDropdown_a6d69a,
+            .tagsButton_a6d69a {
                 @include box.default;
                 --interactive-normal: #{$black};
 
@@ -83,14 +83,14 @@
                     border-color: $light;
                 }
             }
-            .tagsButton__34537 {
+            .tagsButton_a6d69a {
                 padding: 0;
 
                 // Tag counter
-                .countContainer_a9a63f {
+                .countContainer_a6d69a {
                     background: unset;
                 }
-                .countText__90ea0 {
+                .countText_a6d69a {
                     color: $black;
                     font-size: 14px;
                     line-height: 18px;
@@ -101,15 +101,15 @@
 }
 
 // Tags
-.pill_f055c3.pill_f055c3 {
+.pill_c993da.pill_c993da {
     @include box.default;
     --text-normal: #{$black};
 
-    &.clickable_daf171:not(.disabled_fbfabf):hover {
+    &.clickable_c993da:not(.disabled_c993da):hover {
         background: $medium;
     }
 
-    &.selected__50db4.selected__50db4 {
+    &.selected_c993da.selected_c993da {
         border-color: $light;
         background: $medium;
     }
@@ -117,57 +117,57 @@
 
 // Unset forum minimum width
 .grid-21dB-S > div:first-child,
-.headerRow__86f2e,
-.list__5ced9 > div:first-child {
+.headerRow_a6d69a,
+.list_a6d69a > div:first-child {
     min-width: unset;
     box-sizing: border-box;
 }
 
 // Forum post info
-.scrollerInner__37fee {
+.scrollerInner_e2e187 {
     overflow: unset;
-    .container__68e43 {
+    .container_b385c8 {
         background: unset;
         pointer-events: none;
         border-top: 0;
         top: 0;
 
-        .reactButtons_db41f7,
-        .buttons_ef8915 {
+        .reactButtons_b385c8,
+        .buttons_b385c8 {
             pointer-events: all;
         }
     }
-    .divider__4df9f {
+    .divider_af45f8 {
         display: none;
     }
 
     // Post action buttons
-    .addReactButton__4342f,
-    .buttonInner__865de {
+    .addReactButton_b385c8,
+    .buttonInner_b385c8 {
         @include box.default;
         color: $black;
 
-        &.active_f2e487 {
+        &.active_f61c73 {
             @include box.highlight;
         }
 
         &:hover,
-        &:active .icon__09a44,
-        &.active_f2e487 .icon__09a44,
-        &:hover .icon__09a44 {
+        &:active .icon_f61c73,
+        &.active_f61c73 .icon_f61c73,
+        &:hover .icon_f61c73 {
             color: $black;
         }
     }
 
     // Reaction
-    .reaction_ef7e09 {
+    .reaction_f61c73 {
         @include box.default;
 
-        &.reactionMe__9fc5c {
+        &.reactionMe_f61c73 {
             @include box.highlight;
         }
 
-        .reactionCount_b780c8 {
+        .reactionCount_f61c73 {
             color: $black;
         }
     }

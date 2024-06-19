@@ -1,25 +1,25 @@
 @use "../../top/vars" as *;
 @use "../../top/box";
 
-.panels__58331 {
-    .panel_bd8c76,
-    .container_e1958d,
-    .container_debb33 {
+.panels_a4d4d9 {
+    .panel_bf1a22,
+    .container_adcaac,
+    .container_b2ca13 {
         background: unset;
     }
 
     // Now playing
-    .panel_bd8c76 {
+    .panel_bf1a22 {
         border-bottom: 0;
     }
 
     // Voice controls
-    .container_e1958d {
+    .container_adcaac {
         border-bottom: 0;
 
         // Activity buttons
-        .actionButtons__85e3c {
-            .button_b82d53:not(.disabledButtonWrapper_b04230) {
+        .actionButtons_adcaac {
+            .button_adcaac:not(.disabledButtonWrapper_dd4f85) {
                 @include box.default;
                 height: 36px;
                 color: $background;
@@ -27,10 +27,10 @@
             }
 
             // Disabled button
-            .disabledButtonWrapper_b04230 {
+            .disabledButtonWrapper_dd4f85 {
                 height: 36px;
 
-                .contents__322f4 {
+                .contents_dd4f85 {
                     display: flex;
                     align-items: center;
                 }
@@ -39,10 +39,10 @@
     }
 
     // User controls
-    .container_debb33 {
+    .container_b2ca13 {
         margin-bottom: 0;
 
-        .avatarWrapper__500a6 {
+        .avatarWrapper_b2ca13 {
             margin: 0;
             padding-left: 0;
         }

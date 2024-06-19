@@ -12,20 +12,20 @@
 
 @use "../top/vars" as *;
 
-.bg__12180 {
+.bg_d4b6c5 {
     background: $medium;
 }
 
-.content__76dcf {
+.content_a4d4d9 {
     border: $size-border solid $light;
 
-    .sidebar_e031be + :is(div, main):not(.erd_scroll_detection_container),
-    .sidebar_e031be + .erd_scroll_detection_container + :is(div, main):not(.erd_scroll_detection_container) {
+    .sidebar_a4d4d9 + :is(div, main):not(.erd_scroll_detection_container),
+    .sidebar_a4d4d9 + .erd_scroll_detection_container + :is(div, main):not(.erd_scroll_detection_container) {
         background: unset;
         border-left: $size-border solid $light;
 
-        .content__01e65,
-        .tabBody_a90ea8 {
+        .content_a7d72e,
+        .tabBody_c2739c {
             padding: 16px;
             gap: 16px;
 
