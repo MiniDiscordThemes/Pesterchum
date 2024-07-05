@@ -17,7 +17,7 @@
       "github": "winterClover"
     }
   ],
-  "version": "1.7.0",
+  "version": "1.7.1",
   "updater": {
     "type": "store",
     "id": "net.saltssaumure.Pesterchum"
