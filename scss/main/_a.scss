@@ -1,15 +1,3 @@
-@forward "./channels";
-@forward "./dm";
-@forward "./forum";
-@forward "./header";
-@forward "./members";
-@forward "./messages";
-@forward "./messagesspecial";
-@forward "./search";
-@forward "./servers";
-@forward "./split";
-@forward "./titlebar";
-
 @use "../top/vars" as *;
 
 .bg_d4b6c5 {
@@ -21,7 +9,7 @@
 
     .sidebar_a4d4d9 + :is(div, main):not(.erd_scroll_detection_container),
     .sidebar_a4d4d9 + .erd_scroll_detection_container + :is(div, main):not(.erd_scroll_detection_container) {
-        background: unset;
+        background: unset !important;
         border-left: $size-border solid $light;
 
         .content_a7d72e,

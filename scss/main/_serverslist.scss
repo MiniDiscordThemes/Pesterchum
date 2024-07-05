@@ -4,10 +4,20 @@
 .wrapper_fea3ef {
     background: unset;
 
-    // Home icon
-    .childWrapper_a6ce15:has([d^="M19.73 4.87"]) {
-        background: url("https://minidiscordthemes.github.io/Pesterchum/img/home.avif") center/80% no-repeat $background;
-        color: transparent;
+    // Home and favourite icons
+    @at-root .wrapper_f90abb {
+        &:is(&, :hover) {
+            .childWrapper_f90abb {
+                background: $background;
+                color: $light;
+            }
+        }
+
+        // Home icon
+        .tutorialContainer_f9623d.tutorialContainer_f9623d .childWrapper_f90abb {
+            background: url("https://minidiscordthemes.github.io/Pesterchum/img/home.avif") center/80% no-repeat $background;
+            color: transparent;
+        }
     }
 
     // New and discover icons
