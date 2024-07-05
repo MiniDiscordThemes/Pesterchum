@@ -4,11 +4,15 @@
 // Members list
 .container_cbd271 {
     background: unset;
-}
-.members_cbd271 {
-    @include box.sync;
 
-    .member_cbd271 {
-        background: unset;
+    @at-root .members_cbd271 {
+        @include box.sync;
+
+        // Activity
+        @at-root .container_c64476,
+        // Member
+        .member_cbd271 {
+            background: unset;
+        }
     }
 }
