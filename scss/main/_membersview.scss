@@ -1,0 +1,24 @@
+@use "../top/vars" as *;
+@use "../top/box";
+
+// Specific to members view header
+.header_d20375 {
+    box-shadow: none;
+
+    + .scroller_d20375 {
+        padding-bottom: 0;
+        top: 16px;
+        left: 16px;
+        width: calc(100% - 28px);
+
+        .content_a7d72e.content_a7d72e.content_a7d72e {
+            padding: 0;
+            @include box.sync;
+        }
+    }
+}
+
+// Server members view
+.mainTableContainer_e23072 {
+    background: $background;
+}

@@ -9,7 +9,7 @@
 
     .sidebar_a4d4d9 + :is(div, main):not(.erd_scroll_detection_container),
     .sidebar_a4d4d9 + .erd_scroll_detection_container + :is(div, main):not(.erd_scroll_detection_container) {
-        background: unset;
+        background: unset !important;
         border-left: $size-border solid $light;
 
         .content_a7d72e,
