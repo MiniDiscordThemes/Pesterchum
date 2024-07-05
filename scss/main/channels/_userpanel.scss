@@ -4,8 +4,15 @@
 .panels_a4d4d9 {
     .panel_bf1a22,
     .container_adcaac,
-    .container_b2ca13 {
+    .container_b2ca13,
+    .wrapper_c721cc {
         background: unset;
+    }
+
+    // Quest progress
+    .contentWrapper_c721cc,
+    .postEnrollmentBackground_c3427e {
+        background: $background !important;
     }
 
     // Now playing
